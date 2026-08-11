@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.containerAside {
+    width: 20%;
+    padding: 5px;
+}
+
+.containerContent {
+    width: 80%;
+    padding: 5px;
+}
+
+.nombreAcademico {
+    background-color: #054BDD;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.containerMenu {
+    background-color: #C7D6DC;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.optionMenu {
+    padding: 10px 10px;
+    background-color: #ffff;
+}
+
+
+.menuContainer {
+    background-color: #c7d6dc;
+    padding: 10px 0px 0px 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.menuOption {
+    background-color: #d7d7d8;
+    border-radius: 10px 10px 0px 0px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: none;
+    margin-left: 5px;
+}
+
+.selected {
+    background-color: white;
+}

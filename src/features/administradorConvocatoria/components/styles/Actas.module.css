@@ -1,0 +1,375 @@
+.requisitosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #054bdd;
+}
+
+label {
+  color: #47464c;
+}
+
+.listRequisitos {
+  margin-top: 1rem;
+}
+
+.requisito {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 3px 0;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.nombreRequisito {
+  display: flex;
+  gap: 3px;
+}
+
+.nombreRequisito > label {
+  font-weight: normal;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.nombreRequisito > label > span {
+  font-weight: 900;
+}
+
+.containerBtnAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+
+.restForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttonCheckTodos {
+  display: flex;
+  justify-content: end;
+}
+
+.buttonCheckTodos button {
+  background-color: transparent;
+  border: none;
+  color: #de3323;
+}
+
+.buttonCheckTodos button:hover {
+  cursor: pointer;
+}
+
+.inputsRadio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputsRadio label {
+  font-weight: normal;
+  margin: 0;
+}
+
+.containerInputRadio {
+  display: flex;
+  align-items: center;
+}
+
+.textarea > label {
+  font-weight: normal;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.containerSubmit {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.buttonSubmit {
+  background-color: #054bdd;
+  color: #ffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+}
+
+.buttonSubmit:hover {
+  cursor: pointer;
+  background-color: #3d91e6;
+}
+
+.requisitosContainer {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+
+.check {
+  width: 50px;
+  height: auto;
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+  margin: 0 15px;
+  border-radius: 40px;
+  background-color: #19357b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #566faf;
+}
+
+.guardar {
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/* width */
+.formEvaluacion::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.formEvaluacion::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #807b7b;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+/* Handle */
+.formEvaluacion::-webkit-scrollbar-thumb {
+  background: #4b4b4b;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.formEvaluacion::-webkit-scrollbar-thumb:hover {
+  background: #807b7b;
+}
+
+.formEvaluacion {
+  border: 2px solid #a9a9a9;
+  border-radius: 3px;
+  padding: 10px;
+  height: 555px;
+  overflow-y: auto;
+}
+
+.formPregunta:nth-child(even) {
+  margin: 10px 0;
+}
+
+textarea {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.restForm {
+  margin-top: 1rem;
+}
+
+/* .container_inputs_select_radio {} */
+
+.inputRadio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.inputRadio label,
+.textarea label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #212529;
+}
+
+.textarea textarea {
+  margin-top: 10px;
+  height: 7rem;
+  width: 100%;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.submit input[type="submit"] {
+  padding: 8px 10px;
+  color: #ffff;
+  background-color: #054bdd;
+  border-radius: 4px;
+}
+
+.submit input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #3f5ac5;
+}
+
+.submit > p {
+  color: #00c0a9;
+  margin: 10px 0;
+}
+
+.inputSelect {
+  display: flex; /* Usamos flexbox para que el select y el botón estén alineados en fila */
+  gap: 10px; /* Espacio entre el select y el botón */
+  align-items: center; /* Alineación vertical centrada */
+}
+
+.inputSelect select {
+  flex-grow: 1; /* Hace que el select ocupe el espacio disponible */
+}
+
+.inputSubirEvidencia {
+  padding: 8px 15px; /* Ajusta el padding para darle un tamaño adecuado */
+  color: #ffff;
+  background-color: #054bdd;
+  border-radius: 4px;
+  cursor: pointer; /* Añadir cursor pointer para el botón */
+  width: auto; /* Asegura que el ancho sea lo justo para el texto */
+  max-width: 120px; /* Limita el ancho máximo para evitar que se haga demasiado grande */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+.containerArchivos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.archivo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.tdAcciones {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonVisualizar,
+.buttonGenerar,
+.buttonSubir {
+  background-color: #054bdd;
+  color: #ffff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.buttonVisualizar:hover,
+.buttonGenerar:hover,
+.buttonSubir:hover,
+.cancelButton:hover {
+  background-color: #2c63db;
+}
+
+.buttonVisualizarDisabled,
+.buttonGenerarDisabled,
+.buttonSubirDisabled {
+  background-color: #d9d9d9;
+  color: #ffff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: not-allowed;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+}
+
+.table thead {
+  background-color: #e0e0e0;
+}
+
+.table thead th {
+  padding: 10px;
+  border: 1px solid #d0d0d0 ;
+  text-align: left;
+  font-weight: bold;
+  background-color: #e0e0e0 ;
+}
+
+.table tbody tr {
+  background-color: #ffffff !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.table tbody td {
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  text-align: left;
+}
+
+.table tbody td:first-child {
+  text-align: left;
+}

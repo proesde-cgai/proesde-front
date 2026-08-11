@@ -1,0 +1,89 @@
+.menuContainer {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Estilo para las opciones dentro del submenú */
+.subMenuOption {
+  text-align: center;
+  padding: 2px 4px;
+  cursor: pointer;
+  color: white;
+  background-color: #751daa;
+  border-bottom: 1px solid #eee;
+}
+
+.subMenuOption:hover{
+  background-color: #4d0f73;
+}
+
+.menuOption {
+  flex-grow: 1;
+  /* max-width: max-content; */
+  padding: 10px 20px;
+  /* margin-right: 10px; */
+  font-family: "Raleway", sans-serif;
+
+  cursor: pointer;
+  transition: border-color 0.2s;
+  border-bottom: 3px solid #ecf5f5;
+  overflow: hidden;
+  background-color: #751daa;
+  color: #e9fffe;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #cccccc70;
+  border-right: 1px solid #cccccc70;
+  text-align: center;
+}
+
+.selected {
+  background-color: #a396e0;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.show {
+  max-height: 200px;
+}
+
+.hide {
+  max-height: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.options {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.selectedOption {
+  flex: 2;
+}
+
+.menuOption {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.optionContent {
+  margin-top: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.vertical {
+  flex-direction: column;
+}

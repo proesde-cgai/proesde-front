@@ -1,0 +1,38 @@
+.formEliminarEvidencia {
+    margin: 0;
+    padding: 0;
+}
+
+.btnEliminarEvidencia {
+    background-color: transparent;
+    border: none;
+}
+.btnEliminarEvidencia:hover {
+    cursor: pointer;
+}
+
+.btnEliminarEvidenciaInactive {
+    background-color: transparent;
+    border: none;
+}
+.btnEliminarEvidenciaInactive:hover {
+    cursor: not-allowed;
+}
+
+.buttonPdf {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+}
+
+.buttonPdf:hover {
+    cursor: pointer;
+}
+  
+.buttonPdf > svg {
+  width: 100%;
+  height: 100%;
+}

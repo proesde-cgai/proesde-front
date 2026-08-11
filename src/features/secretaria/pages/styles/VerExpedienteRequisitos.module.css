@@ -1,0 +1,25 @@
+.containerCotejoRequisitos {
+  margin-top: 1rem;
+}
+
+.containerBtnPDF {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+.buttonPdf > svg {
+  height: 100%;
+  width: 100%;
+}

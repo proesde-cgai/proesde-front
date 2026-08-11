@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.containerAside {
+  width: 20%;
+  padding: 5px;
+}
+
+.containerContent {
+  width: 80%;
+  padding: 5px;
+}
+
+.nombreAcademico {
+  background-color: #054BDD;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px 0;
+  position: relative;
+}
+
+.estadoSolicitud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #054BDD;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.containerMenu {
+  background-color: #C7D6DC;
+}
+
+.menu {
+  margin-top: 10px;
+}
+
+.subMenu {
+  margin-top: 5px;
+}
+
+.optionMenu {
+  padding: 10px 10px;
+  background-color: #ffff;
+}
+
+.subMenuOption {
+  background-color: #d7d7d8;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  border: none;
+  margin-left: 5px;
+}
+
+.subMenuOption:hover {
+  background-color: #c7d6dc;
+  cursor: pointer;
+}
+
+.menuContainer {
+  background-color: #c7d6dc;
+  padding: 10px 0px 0px 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.menuOption {
+  background-color: #d7d7d8;
+  border-radius: 10px 10px 0px 0px;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  border: none;
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: white;
+}
+.estadoSolicitudContainer {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.estadoSolicitudRounded{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(203, 248, 90);
+}
+
+.estadoSolicitudText{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.estadoSolicitudTextStatus{
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 2px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: #054BDD;
+}

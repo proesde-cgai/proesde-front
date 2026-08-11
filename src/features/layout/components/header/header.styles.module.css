@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f1f1f6;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+  width: 100%;
+}
+
+.bannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  min-height: 250px; 
+}
+
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.personasImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.resizedSvg {
+  width: 100%; 
+  height: auto;
+  display: block;
+}

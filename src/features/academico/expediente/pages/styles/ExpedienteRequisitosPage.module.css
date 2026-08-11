@@ -1,0 +1,76 @@
+.containerExpedienteRequisitos {
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    margin-bottom: 10rem;
+}
+
+.containerTablaRequisitos {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.containerBtnPDF {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonPdf {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+}
+
+.buttonPdf:hover {
+    cursor: pointer;
+}
+
+.buttonPdf>svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* .tdTablaExpedienteRequisitos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+} */
+
+.tdEliminarEvidencia {
+    text-align: center;
+}
+.tdEliminarEvidencia > button {
+    margin-right: 12px;
+}
+
+.annotation {
+    font-size: small;
+}
+
+.supportNotes {
+    margin-top: 12px;
+}
+
+.supportNotesTitle {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.supportNotesList {
+    margin: 0;
+    padding-left: 22px;
+    display: grid;
+    gap: 6px;
+}
+
+.bold {
+    font-weight: 700;
+    color: #000;
+}

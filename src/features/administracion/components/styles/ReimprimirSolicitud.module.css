@@ -1,0 +1,151 @@
+.mainContainer {
+    display: flex;
+}
+
+.containerAside {
+    width: 15%;
+    padding: 1rem;
+    border: 1px solid #B9B9B9;
+    border-style: none dashed none none;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.inputField:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.form {
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+strong {
+    color: red;
+    font-size: 22px;
+}
+
+.subTiles {
+    border: none;
+    background-image: url('../../../../assets/images/v_hlp_op.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 8px;
+    text-align: left;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.dataParticipante {
+    padding-left: 70px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.fecha {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.fechaInput {
+    padding-left: 70px;
+}
+
+.formContainer {
+    margin-top: 20px;
+}
+
+/* Center the buttons within the form */
+.button {
+    display: flex;
+    /* Flexbox for layout */
+    justify-content: center;
+    /* Center buttons horizontally */
+    margin-right: 100px;
+    align-items: center;
+    /* Center buttons vertically (if needed) */
+    gap: 70px;
+    /* Space between the buttons */
+    margin-top: 40px;
+    /* Add spacing above the buttons */
+}
+
+/* Style for the "Guardar" button */
+.buttonSubmit {
+    padding: 10px 20px;
+    /* Increase button size */
+    font-size: 16px;
+    /* Larger text */
+    border: 2px solid #007bff;
+    /* Border color for "Guardar" */
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Style for the "Cancelar" button */
+.buttonCancelar {
+    padding: 8px 16px;
+    /* Increase button size */
+    font-size: 16px;
+    /* Larger text */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effects */
+.buttonSubmit:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+.error {
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.385);
+    color: white;
+}

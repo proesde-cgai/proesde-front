@@ -1,0 +1,93 @@
+.container {
+  padding: 20px;
+  font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resultContainer {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.successMessage {
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  max-width: 250px;
+  min-width: 100px;
+  overflow: visible;  /* Asegura que el texto no se oculte */
+  text-overflow: clip;  /* Corta el texto que sobresalga sin añadir puntos suspensivos */
+  word-break: break-word; 
+}
+
+
+
+
+.errorContainer {
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: red;
+}
+
+.errorTitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.errorMessage {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .table {
+    min-width: 800px;
+  }
+  .table th, .table td {
+    padding: 4px;  /* Reducir el padding para ganar espacio */
+    font-size: 0.8em;  /* Reducir el tamaño del texto para evitar la compresión */
+  }
+}

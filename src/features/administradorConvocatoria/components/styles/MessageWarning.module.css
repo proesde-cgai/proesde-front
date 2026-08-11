@@ -1,0 +1,10 @@
+.containerAlert {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.textAlert {
+  text-align: center;
+  color: rgb(185, 0, 0);
+  font-weight: bold;
+}

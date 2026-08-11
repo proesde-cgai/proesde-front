@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.textInstruccion {
+    text-align: justify;
+}
+
+
+.textInstruccion h4 {
+    color: #0942e1;
+}
+
+.icon {
+    content: '\27A4';
+    color: orange;
+    
+}
+
+.textInstruccion p {
+    text-align: justify;
+}
+
+.textInstruccionSpan
+{
+    display: inline-block;
+    color: #00c2c7;
+}
+
+.iconContainer {
+    background-color: #00c2c7;
+    padding: 5px; 
+    border-radius: 20%; 
+    display: inline-block;
+}
+  
+  .customIcon {
+    color: white; 
+  }
+  

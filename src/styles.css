@@ -1,0 +1,157 @@
+/* 
+  ###############################
+  *    RESET ESTILOS  INICIALES 
+  ###############################
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* font: 16px 'Roboto', sans-serif, 'EBGaramond', serif; */
+  font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+  font: inherit;
+}
+
+/* 
+  ###############################
+  *       FUENTES
+  ###############################
+*/
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('../src/assets/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SerotivaBlack';
+  src: url('../src/assets/fonts/Serotiva-Black-BF6639850819233.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+  ###############################
+  *       ESTILOS GENERALES
+  ###############################
+*/
+
+.texto_con_icono {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Esconder el checkbox original */
+.checkbox_green {
+  appearance: none;
+  /* Para deshabilitar el estilo predeterminado del checkbox */
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #00C0A9;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilo del checkbox cuando está marcado */
+.checkbox_green:checked {
+  background-color: #00C0A9; /* Cambia el color de fondo del checkbox marcado */
+  border-color: #00C0A9;
+}
+
+/* Palomita (checkmark) personalizada */
+.checkbox_green:checked::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Input checkbox de color azul redondo con palomita */
+.checkbox_blue_check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox_blue_check:checked {
+  background-color: #3C5AD6;
+  border-color: #3C5AD6;
+}
+.checkbox_blue_check:checked::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Input radio de color verde */
+.inpt_radio_green {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #00C0A9;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.inpt_radio_green:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #00C0A9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,279 @@
+/* General Styles */
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
+  }
+  
+  .containerAside {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    margin-top: 0;
+    padding: 5px;
+  }
+  
+  .codigo {
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .form {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dataParticipante {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .inputFieldDate {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .inputField:focus,
+  .inputFieldDate:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  
+  .cancelButton,
+  .saveButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .cancelButton {
+    background-color: #ccc;
+  }
+  
+  .cancelButton:hover {
+    background-color: #bbb;
+  }
+  
+  .saveButton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .saveButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .subTiles {
+    border: none;
+    background-image: url('../../../../assets/images/v_hlp_op.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 8px;
+    text-align: left;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .titleCode {
+    text-align: right;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .formContainer {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0d8df;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: start;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablet View */
+  @media (max-width: 768px) {
+    .mainContainer {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .containerAside {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .form {
+      width: 100%;
+      margin-left: 0;
+      padding: 15px;
+    }
+  
+    .inputFieldDate {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .buttonGroup {
+      justify-content: center;
+      margin-left: 0;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .containerAside {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .formContainer {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .inputField {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .inputFieldDate {
+      width: 100%;
+      font-size: 12px;
+      height: 36px;
+      margin-left: 0;
+    }
+  
+    .buttonGroup {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .saveButton,
+    .cancelButton {
+      padding: 8px 15px;
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  
+  .divider {
+    width: 1px;
+    background-color: #ccc;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  .dataCursiva {
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .rightText {
+    text-align: right;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .successMessage {
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .saveButtonDisabled {
+    background-color: #51a3fc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: not-allowed;
+    border: none;
+    opacity: 0.6;
+  }  

@@ -1,0 +1,78 @@
+/* TablaMateriasDetalle.module.css */
+.table {
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table th {
+    font-weight: bold;
+  }
+  .button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .buttonChanged {
+    border: 2px solid red; /* Borde rojo para indicar que hubo una actualización */
+  }
+
+.buttonDisabled {
+  background-color: #ccc; /* Light gray color to indicate disabled state */
+  color: white; /* A darker gray for the text */
+  cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+}
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 1.5;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.pagination span {
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+  
+  

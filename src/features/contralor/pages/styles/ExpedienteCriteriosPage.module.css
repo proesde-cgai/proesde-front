@@ -1,0 +1,17 @@
+.menuContainer {
+    padding: 10px 0px 0px 0px;
+}
+
+.menuOption {
+    background-color: #ffff;
+    border-radius: 10px 10px 0px 0px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: none;
+    margin-left: 5px;
+}
+
+.selected {
+    background-color: #c7d6dc;
+}

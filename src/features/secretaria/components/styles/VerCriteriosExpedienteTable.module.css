@@ -1,0 +1,31 @@
+.container {
+  margin: 5px;
+}
+
+.containerBtnPDF {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+.buttonPdf > svg {
+  height: 100%;
+  width: 100%;
+}

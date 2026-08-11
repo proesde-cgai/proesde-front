@@ -1,0 +1,74 @@
+.tablaResultados {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+}
+
+.rowHeadTable > th {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    font-weight: bold;
+}
+
+.rowHeadTh {
+    background-color: #e0e0e0;
+}
+
+.rowHeadTh > th {
+    padding: 8px;
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+.tdCalificacion, .tdTextCenter {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #d0d0d0;
+}
+
+.bodyTable > tr > td {
+    padding: 8px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+}
+
+.bodyTable > tr {
+    background-color: #ffffff;
+}
+
+.tdDepartamento {
+    text-align: left;
+}
+
+.tdNombreCriterioPadre {
+    text-align: left;
+    font-weight: normal;
+}
+
+.tdNombreCriterioHijo {
+    text-align: left;
+    padding-left: 24px !important;
+}
+
+.rowFooterTable {
+    background-color: #d0d0d0 !important;
+    font-weight: bold;
+}
+
+.rowFooterTable > td {
+    padding: 8px;
+    background-color: #e0e0e0 !important;
+    border: 1px solid #d0d0d0 !important;
+}
+
+.tdTotal {
+    text-align: right;
+    font-weight: bold;
+    background-color: #e0e0e0;
+}

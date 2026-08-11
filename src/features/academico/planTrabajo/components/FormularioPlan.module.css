@@ -1,0 +1,179 @@
+/* Contenedor general */
+.solicitudContainer {
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Seccion de Header con datos de docente */
+.headerContainer {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.userInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 1 1 calc(25% - 10px);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.column:not(:first-child) {
+  border-left: 1px solid black;
+}
+
+.titleField {
+  width: 100%;
+  background-color: #a9a9a9;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.displayField {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.observacionDefault {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #a9a9a9;
+  font-size: 14px;
+  color: #000000;
+}
+
+.observacionContainer {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.observacionSuccess {
+  margin: 20px;
+  padding: 20px;
+  background-color: #badbcc;
+  border: 1px solid #badbcc;
+  font-size: 14px;
+  color: #0f5132;
+  display: flex;
+}
+
+.observacionWarning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffecb5;
+  border: 1px solid #ffecb5;
+  font-size: 14px;
+  color: #664d03;
+}
+
+.observacionRechazado {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffc9b5;
+  border: 1px solid #ffbbb5;
+  font-size: 14px;
+  color: #511b0f;
+}
+
+.textObservacion {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* Seccion de formulario */
+
+.formFields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.formColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+}
+
+.inputField {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #a9a9a9;
+  width: 90%;
+  box-sizing: content-box;
+  height: 60px;
+}
+
+.labelTitle {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* btn */
+.submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnDisabled {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.btnDownload {
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.textStatusResponseFailed {
+  font-size: 18px;
+  color: #c74629;
+}
+
+.textStatusResponseSuccess {
+  font-size: 18px;
+  color: #0f5132;
+}
+

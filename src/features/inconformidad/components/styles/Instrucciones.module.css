@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container_titulo {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.titulo, .subtitulo {
+    text-transform: capitalize;
+    color: #054BDD;
+    font-size: 18px;
+    font-weight: 700;
+}
+.subtitulo {
+    font-weight: 500;
+}
+
+.container_texto_instrucciones {
+    color: #47464C;
+    font-size: 16px;;
+    line-height: 20px;
+}
+
+.itemInciso {
+    margin-left: 1rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+.rowHead {
+    text-align: center;;
+    background-color: #a9a9a9;
+    color: #000;
+    width: auto;
+}
+
+.rowHead th {
+    text-align: center;
+}
+
+tr > th > input {
+    padding: 0;
+}

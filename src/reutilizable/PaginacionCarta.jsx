@@ -1,0 +1,27 @@
+import React from "react";
+import { FaAngleDoubleLeft, FaAngleLeft, FaAngleRight, FaAngleDoubleRight } from "react-icons/fa";
+import styles from "./styles/Paginacion.module.css";
+
+const Paginacion = ({ currentPage, totalPages, onFirstPage, onLastPage, onPreviousPage, onNextPage, disableNext  }) => {
+  return (
+    <div className={styles.pagination} style={{ textAlign: "center", margin: "20px 0" }}>
+      <button onClick={onFirstPage} disabled={currentPage === 1}>
+        <FaAngleDoubleLeft />
+      </button>
+      <button onClick={onPreviousPage} disabled={currentPage === 1}>
+        <FaAngleLeft />
+      </button>
+      <span style={{ margin: "0 15px" }}>
+        Página {currentPage} de {totalPages}
+      </span>
+      <button onClick={onNextPage} disabled={currentPage === totalPages || disableNext}>
+        <FaAngleRight />
+      </button>
+      <button onClick={onLastPage} disabled={currentPage === totalPages || disableNext}>
+        <FaAngleDoubleRight />
+      </button>
+    </div>
+  );
+};
+
+export default Paginacion;

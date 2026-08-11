@@ -1,0 +1,13 @@
+
+.constancia_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    color: #443f3f;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    background-color: #f0f0f040;
+    font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+  
+  }

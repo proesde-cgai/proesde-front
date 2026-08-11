@@ -1,0 +1,40 @@
+.searchAndMunicipio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.searchInputContainer {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.municipioFilterContainer {
+  flex: 1;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.municipioFilterContainer label {
+  margin-right: 8px;
+  font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+}
+
+.municipioFilterContainer select {
+  min-width: 220px;
+  width: 260px;
+  max-width: 320px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+}
+.searchInput {
+  width: 400px;
+  font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+}
+
+.searchLabel {
+  font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+}

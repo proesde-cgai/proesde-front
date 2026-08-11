@@ -1,0 +1,43 @@
+.searchAndDependencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+  }
+  
+  .searchInputContainer {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dependenciaFilterContainer {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .searchInput {
+    width: 300px;
+    margin-left: 10px;
+    font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+  }
+  
+  .searchLabel {
+    font-family: "Sarabun", sans-serif, "EBGaramond", serif;
+  }
+  
+.searchButton {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}

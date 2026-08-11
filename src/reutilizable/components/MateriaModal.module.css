@@ -1,0 +1,108 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón de Cerrar (X) en la esquina superior derecha */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: red;
+}
+
+.tableContainer {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #e6e6e6;
+}
+
+/* Estilos para el select */
+select {
+  padding: 5px;
+  width: 150px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+select:focus {
+  outline: none;
+  border-color: #751daa;
+}
+
+/* Botón de Aceptar */
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.acceptButton {
+  background-color: #751daa; /* Fondo morado */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.acceptButton:hover {
+  background-color: #8722c6; /* Cambio al pasar el mouse */
+}

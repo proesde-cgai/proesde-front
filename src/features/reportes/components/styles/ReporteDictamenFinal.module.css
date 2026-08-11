@@ -1,0 +1,113 @@
+.container {
+  padding: 1rem;
+}
+.title_page {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px;
+}
+.container_parrafo > p {
+  margin-left: 1rem;
+}
+.p_instrucciones {
+  color: #054bdd;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.p_instrucciones > span {
+  color: #ffd536;
+}
+
+.parrafo_instrucciones {
+  line-height: 20px;
+  font-size: 16px;
+  color: #47464c;
+}
+.parrafo_instrucciones > span {
+  font-weight: bold;
+  color: #054bdd;
+}
+
+.container_table {
+  margin: 2rem 0;
+}
+.container_filtros_tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 3px 0;
+}
+.container_filtros_tabla > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 50%;
+}
+
+.container_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.container_buttons > button {
+  padding: 9px 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #054bdd;
+  border: none;
+  border-radius: 5px;
+}
+.container_buttons > button > svg {
+  color: #00c2c7;
+}
+.container_buttons > button:hover {
+  background-color: #3d91e6;
+  cursor: pointer;
+}
+
+.td {
+  padding: 4px;
+}
+.td_nombre {
+  text-transform: uppercase;
+}
+.td_textCenter {
+  text-align: center;
+}
+
+.td_checkbox {
+  text-align: center;
+}
+
+.error_message {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.success_message {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.container_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem;
+  height: 40px;
+  background-color: #FFBABA;
+  color: #D8000C;
+  border-radius: 5px;
+  translate: 0.3s ease all; 
+
+}

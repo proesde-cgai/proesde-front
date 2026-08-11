@@ -1,0 +1,79 @@
+.container {
+    font-family: "Arial", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .inconformidad_title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px;
+      color: #443f3f;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 10px;
+      background-color: #f0f0f040;
+      font-family: "Sarabun", sans-serif, 'EBGaramond', serif;    
+    }
+
+    .subTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: left;
+      margin: 20px 0px;
+      color: #443f3f;
+      font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+    }
+
+    /* containers */
+    @media (max-width: 768px) {
+      .aside {
+          display: none;
+      }
+    }
+
+    .container_aside {
+      display: flex;
+      border: 1px solid #B9B9B9;
+      border-style: none dashed none none;
+    }
+
+    .solicitudContainer {
+      width: 100%;
+      padding: 1rem;
+    } 
+
+    .aside {
+      width: 20%;
+      padding: 1rem;
+      border-right: 1px dashed #b9b9b9;
+    }  
+    
+    .aside > p {
+        margin: 8px 0;
+    }
+  
+  
+    /* estilo para form */
+  
+  .column  {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }  
+  
+  .label {
+    margin-bottom: 8px; 
+    font-size: 14px;
+    font-weight: bold; 
+  }    
+  
+  .select {
+    width: 100%; 
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

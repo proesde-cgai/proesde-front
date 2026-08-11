@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Serotiva';
+  src: url('../../../assets/fonts/Serotiva-Bold-BF663985088f8d7.otf') format('opentype');
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: 'Serotiva', sans-serif;
+}
+
+.left-section {
+  width: 250px;
+  border-right: 1px solid #ccc;
+}
+
+.comision_label {
+  display: flex;
+  margin: 10px;
+}
+
+.dots_commition {
+  margin-top: 20px;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.commission-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 90%;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.commission-select label {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+}
+
+.right-section {
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.colorRed {
+  color: #916075;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.dots_list {
+  padding-bottom: 1px;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.table_label {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 3px solid #333;
+}
+
+.members-table th {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.members-table td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.members-table-header-column {
+  border: none !important;
+  border-bottom: 3px solid black !important;
+  background-color: #969499 !important;
+}
+
+.table_select {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.btn-secondary:focus {
+  outline: none;
+}

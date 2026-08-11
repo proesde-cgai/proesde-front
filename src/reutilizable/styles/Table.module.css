@@ -1,0 +1,24 @@
+table th, table td {
+    border-color: 1px solid #ddd;
+    text-align: center;
+}
+.message_head {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.tabla_body td {
+    padding: 5px;
+}
+
+.tabla_body table th, table td {
+    padding: 0;
+}
+
+.tabla_body tr:nth-child(even) {
+    background-color: #c7c7c7;
+}

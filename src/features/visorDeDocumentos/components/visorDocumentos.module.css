@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Serotiva';
+  src: url('../../../assets/fonts/Serotiva-Bold-BF663985088f8d7.otf') format('opentype');
+}
+
+.container_aside {
+  width: 20%;
+  height: 100vh;
+  padding: 5px;
+}
+
+.mainContainer {
+  font-family: "Serotiva", sans-serif;
+  margin: 0;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.menuContainer {
+  background-color: #c7d6dc;
+  padding: 10px 0px 0px 0px;
+  font-family: "Serotiva", sans-serif;
+}
+
+
+
+.size_6 {
+  transform: translateY(12px);
+  width: 30px;
+  height: 30px;
+  color: gray;
+  background-color: white;
+  padding: 2px;
+  margin-left: 5px;
+}
+
+
+.title{
+  color: #054bde;
+}
+
+.menuOption {
+  background-color: #d7d7d8;
+  border-radius: 10px 10px 0px 0px;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: none;
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: white;
+}
+
+.red {
+  color: red;
+}
+
+.message {
+  margin: 0;
+  color: #a89f9f;
+}
+
+.buttonCenter {
+  display: flex; /* Usar flex para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  margin-top: 20px; /* Espacio en la parte superior */
+}
+
+.check {
+  display: flex;
+  justify-content: space-between; /* Alineación de elementos */
+  align-items: center;
+  padding: 10px;
+}
+
+.check p {
+  margin: 0;
+}
+
+.textContainer {
+  display: flex; /* Para alinear checkbox y texto */
+  align-items: center; /* Alinear verticalmente */
+}
+.container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  height: 1300px;
+  padding-bottom: 200px;
+}
+
+.iconContainer {
+  background-color: #00c2c7;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.customIcon {
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center; 
+}
+
+.btn {
+  font-weight: 200;
+  width: 180px;
+  padding: 10px 20px;
+  background-color: blue; 
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkblue; 
+}
+
+.file {
+  display: none; 
+}
+
+.labelFile {
+  font-weight: 200;
+  padding: 10px;
+  background-color: blue; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}

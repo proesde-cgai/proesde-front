@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .codeSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labelWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .redDots {
+    color: red;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 100px; 
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+  .messageSection {
+    text-align: end;
+  }
+  
+  .errorMessage {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .instructionMessage {
+    color: #b00000;
+    margin-top: 10px;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+  }
+  
+  .cgaiText {
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    margin-bottom: 170px;
+  }

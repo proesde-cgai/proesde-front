@@ -1,0 +1,38 @@
+.containerBtnPDF {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonPdf {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+}
+
+.buttonPdf:hover {
+    cursor: pointer;
+}
+
+.buttonPdf>svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* .tdTablaExpedienteRequisitos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3px;
+  } */
+
+.tdEliminarEvidencia {
+    text-align: center;
+}
+
+.tdEliminarEvidencia>button {
+    margin-right: 12px;
+}

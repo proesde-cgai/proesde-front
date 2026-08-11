@@ -1,0 +1,55 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 50%;
+  height: 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+/* Alert Colors */
+.alert-success {
+  background-color: #d4edda;
+  color: #019D78;
+  border: 2px solid #019D78;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  color: #DE3323;
+  border: 2px solid #DE3323;
+}
+
+.alert-warning {
+  background-color: #ffedb562;
+  color: #FFD536;
+  border: 2px solid #FFD536;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.form_container {
+  margin: 20px auto;
+  width: 50%;
+  display: block;
+
+}
+
+.form_container input {
+  width: 100px;
+}
+.error {
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.385);
+  color: white;
+}
+
+.form_container button {
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: blue; /* Color original del botón */
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.form_container button:hover {
+  cursor: pointer;
+  background-color: rgb(25, 54, 143);
+}
+
+.form_container textarea{
+ width: 700px;
+ height: 500px;
+ resize: none;
+}

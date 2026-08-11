@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 8px;
+    width: 100%;
+}
+
+.containerData {
+    width: 70%;
+}
+
+.nombreDatos {
+    text-transform: capitalize;
+    color: #054BDD;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.containerTable_data {
+    margin-top: 10px;
+}
+
+.inputContainer {
+    background-color: #c7d6dc;
+    border-bottom: 1px solid #9E9E9E;
+    margin-bottom: 0 !important;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.inputContainer > label {
+    flex: 1 1;
+    text-align: right;
+}
+
+.inputContainer > label::after {
+    content: ':';
+    /* Añade los dos puntos */
+}
+
+.inputContainer > input {
+    padding: 10px;
+    border-radius: 2px;
+    height: max-content;
+    /* border: 1px solid #9E9E9E; */
+}
+
+.inputContainer > textarea {
+    height: 15rem;
+    width: 100%;
+    resize: vertical;
+    border: none;
+    font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+}
+
+.containerRespuestaInconformidad {
+    margin-top: 15px;
+}

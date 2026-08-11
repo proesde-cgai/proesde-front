@@ -1,0 +1,26 @@
+.container {
+    padding: 15px;
+    width: 100%;
+    line-height: 1.5;
+}
+.titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #054BDD;
+    text-transform: capitalize;
+}
+
+.icon {
+    color: yellow;
+}
+
+.texto {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DE3323
+}
+.texto > p > span {
+    text-transform: capitalize;
+}

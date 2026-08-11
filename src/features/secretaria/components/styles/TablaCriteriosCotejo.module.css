@@ -1,0 +1,56 @@
+.container {
+  margin: 5px;
+}
+
+.containerBtnPDF {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  width: 4rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+.buttonPdf > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.tdCheckCotejo {
+  text-align: center;
+}
+
+.containerSubmitCotejo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.submitCotejo {
+  width: 15%;
+}
+
+.submitCotejo{
+  padding: 8px 10px;
+  color: #ffff;
+  background-color: #054BDD;
+  border-radius: 4px;
+}
+
+.submitCotejo:hover {
+  cursor: pointer;
+  background-color: #3f5ac5;
+}

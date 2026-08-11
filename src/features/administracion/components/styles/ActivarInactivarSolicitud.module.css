@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  padding: 0px 10px;
+}
+
+.formContainer{
+  width: min(500px, 90%);
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.styles.input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.385);
+  color: white;
+}
+
+.lista {
+  text-align: center;
+  margin: 30px auto;
+  width: 200px;
+}
+
+.estado {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: blue; /* Color original del botón */
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.enviar {
+  background-color: blue; /* Color original del botón */
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(25, 54, 143);
+}

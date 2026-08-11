@@ -1,0 +1,52 @@
+.restForm {
+    margin-top: 1rem;
+}
+
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.submit input[type="submit"] {
+    padding: 8px 10px;
+    color: #ffff;
+    background-color: #054BDD;
+    border-radius: 4px;
+}
+
+.submit input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #3f5ac5;
+}
+
+.submit>p {
+    color: #00C0A9;
+    margin: 10px 0;
+}
+
+.textCenter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tableTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #054BDD;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+.tableTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+}

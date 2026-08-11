@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: left;
+  height: auto;
+}
+
+.mainContainer{
+  padding:20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.formContainer {
+  width: min(300px, 90%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formLeftInfo {
+  height: max-content;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.formLeftInfo label {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.textStatus {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+}
+
+.error {
+  color: #842029;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border: 1px solid #badbcc;
+}
+
+.listaContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleSection {
+  font-weight: bold;
+}
+
+.estado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 200px;
+}
+
+.estadoItem {
+  display: flex;
+  align-items: center;
+}
+
+.estadoItem label {
+  font-weight: normal;
+}
+
+.btn {
+  width: max-content;
+  /* margin: auto; */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #054bdd;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.btnSave {
+  margin: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(25, 54, 143);
+}
+
+.textAlert {
+  color: rgb(185, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}

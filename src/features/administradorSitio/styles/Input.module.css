@@ -1,0 +1,69 @@
+.inputField {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    /* height: 19px; */
+  }
+  
+  .textField {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 19px; */
+  }
+
+  .textField label {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .inputField label {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .input {
+    display: block;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #898989;
+  }
+
+  .textArea {
+    display: block;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #898989;
+    height: 100px;
+  }
+
+  .textArea:focus {
+    border-color: #898989;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-color: #898989;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: #898989;
+  }
+  
+  input:disabled {
+    cursor: not-allowed;
+    color: #898989;
+  }
+  

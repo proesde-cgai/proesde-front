@@ -1,0 +1,33 @@
+.leftInfo {
+  height: max-content;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.codeTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputCode {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.btnCode {
+  width: max-content;
+  align-self: flex-end;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #054bdd;
+  color: white;
+  cursor: pointer;
+}

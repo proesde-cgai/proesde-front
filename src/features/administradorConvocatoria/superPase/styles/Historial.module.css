@@ -1,0 +1,46 @@
+.historialContainer {
+  width: 100%;
+  height: max-content;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #054bdd;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  padding: 10px;
+}
+
+.status {
+  font-weight: bold;
+  color: rgb(185, 0, 0);
+}
+
+.historialList {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.historialItem {
+  padding: 10px;
+}
+
+.historialItem + .historialItem {
+  border-top: 1px solid #ececec;
+}
+
+.requisitosList {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.motivo {
+  padding-left: 10px;
+}

@@ -1,0 +1,2 @@
+export { CambioParticipacion } from './CambioParticipacion';
+

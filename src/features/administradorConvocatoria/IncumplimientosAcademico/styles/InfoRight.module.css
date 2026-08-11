@@ -1,0 +1,77 @@
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textlistdbet {
+  font-weight: bold;
+}
+
+.textInfoAcademic {
+  text-transform: uppercase;
+}
+
+/* Table */
+.tableContainer {
+  margin: 20px auto;
+  margin-bottom: 0px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.condicionesTable {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.condicionesTableThead {
+  background-color: #054BDD;
+  text-align: left;
+}
+
+.condicionesTableTh {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #054bdd;
+  color: white;
+  text-align: center;
+}
+
+
+/* actions  */
+.containerActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btnAction {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btnActionPrimary {
+  background-color: #054BDD;
+}
+
+.btnActionPrimaryCancel{
+  background-color: #7e7e7e;
+}
+
+.btnActionDelete{
+  background-color: #b90000;
+}
+
+.btnActionAdd {
+  color: #054bdd;
+  background-color: white;
+  border: 2px solid #054bdd;
+}

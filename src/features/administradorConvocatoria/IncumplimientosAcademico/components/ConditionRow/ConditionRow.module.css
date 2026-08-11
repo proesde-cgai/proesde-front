@@ -1,0 +1,10 @@
+.btnDelete {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.conditionRowSelect {
+  width: 100%;
+}

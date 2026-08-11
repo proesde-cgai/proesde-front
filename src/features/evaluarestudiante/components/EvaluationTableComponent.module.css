@@ -1,0 +1,40 @@
+/* TablaMaterias.module.css */
+.container {
+  padding: 10px;
+  font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  /* margin-top: 20px; */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background-color: #c6d3f740; */
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,148 @@
+.container {
+    padding: 1rem;
+}
+.titlePage {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+}
+.containerParrafo > p {
+    margin-left: 1rem;
+}
+.parrafoInstruccionesConIcon {
+    color: #054BDD;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.parrafoInstruccionesConIcon > span {
+    color: #FFD536;
+}
+
+.parrafoInstrucciones, .textoGris {
+    line-height: 20px;
+    font-size: 16px;
+    color: #47464C;
+}
+.parrafoInstrucciones > span {
+    font-weight: bold;
+    color: #054BDD;
+
+}
+
+.containerTable {
+    margin: 2rem 0;
+}
+
+.tableLoadingWrapper {
+    position: relative;
+}
+.containerFiltrosTabla {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 3px 0;
+}
+.containerFiltrosTabla > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+.containerButtons > button {
+    padding: 9px 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #054BDD;
+    border: none;
+    border-radius: 5px;
+}
+.containerButtons > button > svg {
+    color: #00c2c7;
+}
+.containerButtons > button:hover {
+  background-color: #3d91e6;
+  cursor: pointer;
+}
+
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.paginationButton {
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #4b5563;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.paginationButton:hover:not(:disabled) {
+    background-color: #e5e7eb;
+    cursor: pointer;
+}
+
+.paginationButton:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+.paginationInfo {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.tableLoadingOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.55);
+    z-index: 2;
+}
+
+.tdNombre {
+    text-transform: uppercase;
+}
+.tdCheckbox {
+   text-align: center;
+}
+.td {
+    padding: 4px;
+}
+
+.tdTextCenter {
+    text-align: center;
+}
+
+.selectFilter {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #47464C;
+    background-color: #fff;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.selectFilter:focus {
+    outline: none;
+    border-color: #054BDD;
+}

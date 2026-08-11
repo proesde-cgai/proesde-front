@@ -1,0 +1,215 @@
+.requisitosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #054BDD;
+}
+
+label {
+    color: #47464C;
+}
+
+.listRequisitos {
+    margin-top: 1rem;
+}
+
+.requisito {
+    border-bottom: 1px solid #D9D9D9;
+    margin: 3px 0;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.nombreRequisito {
+    display: flex;
+    gap: 3px;
+}
+
+.nombreRequisito>label {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.nombreRequisito>label>span {
+    font-weight: 900;
+}
+
+.containerBtnAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.buttonPdf {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.buttonPdf:hover {
+    cursor: pointer;
+}
+
+.restForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttonCheckTodos {
+    display: flex;
+    justify-content: end;
+}
+
+.buttonCheckTodos button {
+    background-color: transparent;
+    border: none;
+    color: #DE3323;
+}
+
+.buttonCheckTodos button:hover {
+    cursor: pointer;
+}
+
+.inputsRadio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputsRadio label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.containerInputRadio {
+    display: flex;
+    align-items: center;
+}
+
+.textarea>label {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.containerSubmit {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttonSubmit {
+    background-color: #054BDD;
+    color: #ffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+}
+
+.buttonSubmit:hover {
+    cursor: pointer;
+    background-color: #3d91e6;
+}
+
+.requisitosContainer {
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+.check {
+    width: 50px;
+    height: auto;
+}
+
+.button {
+    width: 80px;
+    height: 30px;
+    margin: 0 15px;
+    border-radius: 40px;
+    background-color: #19357B;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #566faf;
+}
+
+.guardar {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.containerBtnPDF {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+.buttonPdf > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.validado {
+    background-color: #054bde;
+    opacity: 0.8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.validado::after {
+    content: '✔';
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+}
+

@@ -1,0 +1,43 @@
+.form_container {
+  padding-left: 0;
+}
+
+.form {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna para apilar verticalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.dependencia {
+  margin-bottom: 10px; /* Espacio debajo del select */
+  padding: 10px;
+  width: 100%; /* Asegura que el select use el ancho completo del contenedor */
+}
+
+.text_input {
+  margin: 0;
+  width: 80%; /* Asegura que el input use el ancho completo del contenedor */
+  height: auto;
+}
+
+.icon {
+  width: 10%;
+  height: auto;
+}
+
+.resultados_busqueda {
+  margin-top: 20px; /* Agrega espacio entre el formulario y los resultados */
+  background-color: beige;
+  width: 100%; /* Asegura que el contenedor de resultados use el ancho completo del contenedor */
+}
+
+.result:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.736);
+}
+
+.result {
+  padding: 10px;
+  margin: 0;
+}

@@ -1,0 +1,96 @@
+.tableContainer {
+    margin-top: 150px; 
+    display: block;
+    background-color: white;
+    position: absolute; 
+    z-index: 10; 
+    padding-top: none; 
+    border: 1px solid black;
+    width: fit-content;  
+    margin-left: auto;   
+    margin-right: auto;  
+    text-align: center;
+
+  }
+
+
+.intrucciones {
+    color: black;             
+    font-size: 14px;        
+    text-align: center;       
+    text-justify: inter-word; 
+    line-height: 1.5;        
+  }
+
+
+  th {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+
+  tr:hover {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10px; 
+    gap: 10px; 
+  }
+  
+  .pagination button {
+    padding: 5px 10px; 
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #0056b3; 
+  }
+  
+  .pagination span {
+    font-size: 14px;
+    color: #333; 
+  }
+  
+.eAtendido{
+  background-color: lightgreen;
+  }
+
+.eVacio{
+  background-color: crimson; 
+}
+
+
+.eEvaluado {
+  background-color: lightgreen;
+}
+
+.eInconforme { background-color: crimson; }
+
+.inc {
+  color: 'crimson' ;
+}

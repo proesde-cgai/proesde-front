@@ -1,0 +1,75 @@
+.container {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: min(900px, calc(100% - 24px));
+  pointer-events: none;
+}
+
+.message {
+  margin: 0;
+  white-space: pre-line;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.toast {
+  pointer-events: auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px 40px 10px 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(6px);
+  animation: slideDownFade 180ms ease-out;
+  text-align: left;
+}
+
+.toast-success {
+  background: rgba(212, 237, 218, 0.96);
+  color: #019d78;
+  border: 1px solid rgba(1, 157, 120, 0.55);
+}
+
+.toast-error {
+  background: rgba(242, 222, 222, 0.96);
+  color: #de3323;
+  border: 1px solid rgba(222, 51, 35, 0.55);
+}
+
+.toast-warning {
+  background: rgba(255, 237, 181, 0.96);
+  color: #000000;
+  border: 1px solid rgba(255, 213, 54, 0.65);
+}
+
+.closeButton {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  color: currentColor;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 6px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.closeButton:hover {
+  opacity: 1;
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

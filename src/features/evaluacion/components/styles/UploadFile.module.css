@@ -1,0 +1,38 @@
+.uploadRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.label {
+  flex: 1;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.fileInput {
+  flex: 2;
+  padding: 5px;
+}
+
+.uploadButton {
+  background-color: #054bdd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 110px;
+}
+
+.uploadButton:hover {
+  background-color: #3d91e6;
+}
+
+.uploadButton:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}

@@ -1,0 +1,197 @@
+.container {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+
+.btnDescargar {
+  background-color: #054BDD;
+  color: white;
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+.btnGenerarDoc {
+  padding: 9px 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #054bdd;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnEnviarCotejo {
+  padding: 9px 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #054bdd;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnDescargar:hover {
+  cursor: pointer;
+  background-color: #3d91e6;
+}
+.btnDescargaDisabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+.btnDescargaDisabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+.uploadSection {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.uploadSection h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.uploadRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.label {
+  flex: 2;
+  font-size: 15px;
+  text-align: left;
+}
+
+.fileInput {
+  flex: 2;
+  padding: 5px;
+}
+
+.uploadButton {
+  flex: 1;
+  background-color: #054BDD;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.uploadButton:hover {
+  background-color: #3d91e6;
+}
+
+.uploadButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.modalDiv{
+  display: flex;
+  justify-content: end;
+}
+
+.btnBlue {
+    background-color: #0d6efd; /* Azul Bootstrap */
+    color: #fff;
+    border: 1px solid #0d6efd;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btnBlue:hover {
+    background-color: #0b5ed7; /* Hover Bootstrap */
+    border-color: #0a58ca;
+}
+
+.btnBlue:active {
+    background-color: #0a58ca; /* Active Bootstrap */
+    border-color: #0a53be;
+}
+
+.btnBlue:disabled {
+    background-color: #6c757d; /* Gris bootstrap disabled */
+    border-color: #6c757d;
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.btnRed {
+    background-color: #dc3545; /* Rojo Bootstrap */
+    color: #fff;
+    border: 1px solid #dc3545;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btnRed:hover {
+    background-color: #bb2d3b; /* Hover */
+    border-color: #b02a37;
+}
+
+.btnRed:active {
+    background-color: #b02a37; /* Active */
+    border-color: #a52834;
+}
+
+.btnRed:disabled {
+    background-color: #6c757d; /* Gris disabled (como Bootstrap) */
+    border-color: #6c757d;
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+
+.replaceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}

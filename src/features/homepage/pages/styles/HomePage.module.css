@@ -1,0 +1,243 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Top Bar */
+.topBar {
+  background-color: #222;
+  margin-top: -10px;
+  color: white;
+  font-size: 14px;
+  width: 103%;
+}
+
+.topBarContent {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+  margin: 0;
+}
+
+.topBarContent span {
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: 'EBGaramond';
+}
+
+.topBarUDG {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #b12029;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido del encabezado */
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  /* Limita el ancho del contenido */
+}
+
+.udgLogo {
+
+  height: auto;
+  display: block;
+  margin-left: 45%;
+}
+
+.languageSelector {
+  flex-direction: column;
+  /* Cambia la dirección a columna */
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.languageSelector span {
+  margin: 5px 0;
+  font-family: 'SerotivaBlack';
+}
+
+.flagIcon {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.headerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.udgLogo {
+  width: 200px;
+  height: auto;
+}
+
+.cgaiLogo {
+  width: 120px;
+  height: auto;
+}
+
+/* Banner Section */
+.bannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.personasImage {
+  max-width: 100%;
+}
+
+
+/* Welcome Section */
+.welcomeSection {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.welcomeSection h2 {
+  color: #0943e2;
+  font-size: 28px;
+}
+
+.welcomeSection p {
+  font-size: 18px;
+  color: #47464b;
+  font-weight: bold;
+}
+
+.welcomeSection a {
+  font-size: 16px;
+  color: #0943e2;
+  text-decoration: none;
+}
+
+.registerButton {
+  background-color: #00BFA6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/*DocumentSection */
+.documentSection {
+  margin-top: 30px;
+}
+
+.documentButtons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.documentButton {
+  background-color: #751daa;
+  color: white;
+  padding: 6px 80px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: none;
+}
+
+.documentButton.active {
+  background-color: #a396e0;
+}
+
+.documentList {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.documentList li {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #e5ecf5;
+}
+
+.documentList li a {
+  color: #606064;
+  text-decoration: none;
+}
+
+.documentList li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #cfdde3;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  color: #0943e2;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  /* Centra el contenido */
+
+}
+
+.footer li {
+  margin: 10px 0;
+  /* Espacio entre elementos */
+  position: relative;
+}
+
+.footer li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 60px;
+  /* Ancho del separador */
+  margin: 8px auto;
+  /* Margen superior e inferior */
+  height: 1px;
+  background-color: #ecf4fa;
+  /* Color del separador */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #48474c;
+}

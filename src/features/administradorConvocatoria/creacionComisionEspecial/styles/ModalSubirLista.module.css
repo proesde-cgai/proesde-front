@@ -1,0 +1,221 @@
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+.headerWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.documentIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.instructionText {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.fileInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 80px;
+}
+
+.fileInput {
+  padding: 10px;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  
+}
+
+
+
+.replaceButton {
+  background-color: #d9d9d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: not-allowed;
+  align-self: center;
+  transition: background-color 0.15s ease;
+}
+
+.replaceButton:not(:disabled) {
+  background-color: #0d6efd;
+  cursor: pointer;
+}
+
+.replaceButton:not(:disabled):hover {
+  background-color: #0b5ed7;
+}
+
+.replaceButton:disabled {
+  opacity: 0.6;
+  background-color: #d9d9d9;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 16px;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.cancelButton:hover {
+  background-color: #c82333;
+}
+
+.confirmButton {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: 1px solid #0d6efd;
+  border-radius: 0.375rem;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.confirmButton:hover:not(:disabled) {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.confirmButton:active:not(:disabled) {
+  background-color: #0a58ca;
+  border-color: #0a53be;
+}
+
+.confirmButton:disabled {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.previewTitle {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.tableWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: none;
+  overflow: visible;
+}
+
+.tableWrapperScroll {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.previewTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 0.875rem;
+}
+
+.previewTable thead {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.previewTable th {
+  padding: 10px 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+}
+
+.previewTable td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  color: #333;
+}
+
+.previewTable tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.previewTable tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.invalidRow {
+  background-color: #f8d7da !important;
+}
+
+.invalidRow:hover {
+  background-color: #f5c6cb !important;
+}
+
+.invalidRow td {
+  color: #721c24;
+}
+
+.observacionCell {
+  font-size: 0.8rem;
+  color: #721c24;
+  font-style: italic;
+}

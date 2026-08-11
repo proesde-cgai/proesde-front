@@ -1,0 +1,63 @@
+
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  /* width: 100%; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid #cccccc40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.field_select {
+  position: relative;
+  /* font-size: 0.9rem; */
+}
+
+.field_container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  /* align-items: center; */
+  width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid #cccccc40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.field_label {
+  font-size: 0.8rem;
+  /* spacio de letras */
+  letter-spacing: 0.4px;
+  /* background-color: #f0f0f0; */
+  width: max-content;
+  text-shadow: 0.5px 0.5px 0.5px #00000040;
+  font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+}
+
+
+
+
+.constancia_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  color: #443f3f;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  background-color: #f0f0f040;
+  font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+
+}

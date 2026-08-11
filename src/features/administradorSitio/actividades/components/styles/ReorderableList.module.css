@@ -1,0 +1,55 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.deleted {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.itemName {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 4px;
+}
+
+.moveButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.moveButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

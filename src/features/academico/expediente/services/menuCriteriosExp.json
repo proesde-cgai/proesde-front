@@ -1,0 +1,266 @@
+{
+    "menu": [
+        {
+            "id": 4,
+            "idAntecesor": 1,
+            "orden": 1,
+            "nombre": "A) Docencia",
+            "valorFijo": null,
+            "tope": 250,
+            "topeVeces": null,
+            "documentos": null,
+            "nota": null,
+            "valorInicial": 0
+        },
+        {
+            "id": 5,
+            "idAntecesor": 1,
+            "orden": 2,
+            "nombre": "B) Generación y/o aplicación del conocimiento",
+            "valorFijo": null,
+            "tope": 150,
+            "topeVeces": null,
+            "documentos": null,
+            "nota": null,
+            "valorInicial": 0
+        },
+        {
+            "id": 6,
+            "idAntecesor": 1,
+            "orden": 3,
+            "nombre": "C) Tutorías",
+            "valorFijo": null,
+            "tope": 200,
+            "topeVeces": null,
+            "documentos": null,
+            "nota": null,
+            "valorInicial": 0
+        },
+        {
+            "id": 7,
+            "idAntecesor": 1,
+            "orden": 4,
+            "nombre": "D) Gestión académica individual o colegiada",
+            "valorFijo": null,
+            "tope": 100,
+            "topeVeces": null,
+            "documentos": null,
+            "nota": null,
+            "valorInicial": 0
+        }
+    ],
+    "subMenu": [
+        {
+            "id": 30,
+            "idAntecesor": 4,
+            "orden": 1,
+            "nombre": "1. Contar con certificación del dominio de otro idioma, por institución reconocida y/o organismo acreditador",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "",
+            "nota": "",
+            "valorInicial": 0
+        },
+        {
+            "id": 31,
+            "idAntecesor": 4,
+            "orden": 2,
+            "nombre": "2. Asistencia a cursos/taller y/o acreditación de diplomados",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "",
+            "nota": "Nota 1: Cuando la constancia no especifique la carga horaria, se deberá agregar la carátula del curso/taller u otra evidencia que especifique el número de horas.<br><br>Nota 2: No se contabilizarán aquellos que formen parte de un programa de estudios para la obtención de un título, grado o diploma.<br>",
+            "valorInicial": 0
+        },
+        {
+            "id": 522,
+            "idAntecesor": 4,
+            "orden": 3,
+            "nombre": "3. Cursos impartidos",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "a)     Carta de Invitación expedida por la institución.\\nb)     Constancia expedida por la institución que valida la impartición del curso (especificar nombre, duración y el número de horas).",
+            "nota": "Si el curso impartido, ya sea nacional o internacional, es impartido en otro idioma, se le otorgará adicionalmente el puntaje establecido.",
+            "valorInicial": 0
+        },
+        {
+            "id": 526,
+            "idAntecesor": 4,
+            "orden": 4,
+            "nombre": "4. Evaluación realizada por los alumnos",
+            "valorFijo": null,
+            "tope": 200,
+            "topeVeces": 10,
+            "documentos": "a)     Constancia emitida por el titular de la dependencia de adscripción que proporcione el juicio emitido por los alumnos sobre la calidad en el desempeño de actividades docentes. (grupo, ciclo escolar, carga horaria, desempeño y escala de interpretación).",
+            "nota": "",
+            "valorInicial": 0
+        },
+        {
+            "id": 533,
+            "idAntecesor": 4,
+            "orden": 5,
+            "nombre": "5. Publicación de libro de texto",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "En todos los casos:\\na)     Copia de caratula o portada, contraportada, índice e ISBN o registro equivalente, año de publicación, edición, editorial y aquellas páginas que complementen los datos. En los casos de libros colectivos, además: anexar la portada y contraportada correspondiente.\\n\\nEn los casos de traductor además: \\n\\nb)     La caratula del libro y la página donde se den los créditos como traductor. En los casos de libros electrónicos: Dirección electrónica donde se encuentre la publicación. ",
+            "nota": "",
+            "valorInicial": 0
+        },
+        {
+            "id": 544,
+            "idAntecesor": 4,
+            "orden": 6,
+            "nombre": "6. Publicaciones de divulgación cultural para el área de las artes en cualquier formato con comité editorial, siempre y cuando contribuyan al mejoramiento del trabajo docente.",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "Portada o caratula, índice e ISBN o registro correspondiente, comité editorial.\\nProducto: entrevista, nota periodística (radio, televisión, revista, periódico, catalogo).",
+            "nota": "",
+            "valorInicial": 0
+        },
+        {
+            "id": 547,
+            "idAntecesor": 4,
+            "orden": 7,
+            "nombre": "7. Elaboración de material didáctico",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": null,
+            "nota": "Nota: Se deberá contabilizar por material elaborado en el año de evaluación, no por curso.",
+            "valorInicial": 0
+        },
+        {
+            "id": 558,
+            "idAntecesor": 4,
+            "orden": 8,
+            "nombre": "8. Diseño de cursos en modalidad mixta o en línea.",
+            "valorFijo": null,
+            "tope": null,
+            "topeVeces": null,
+            "documentos": "",
+            "nota": "",
+            "valorInicial": 10
+        },
+        {
+            "id": 897,
+            "idAntecesor": 4,
+            "orden": 9,
+            "nombre": "9. Viajes de estudio o visitas guiadas, aprobadas por la academia (máximo 2 grupos por ciclo).",
+            "valorFijo": 5,
+            "tope": 20,
+            "topeVeces": 4,
+            "documentos": "",
+            "nota": "",
+            "valorInicial": 0
+        }
+    ],
+    "arbol": [
+        {
+            "criterio": {
+                "id": 502,
+                "idAntecesor": 30,
+                "orden": 1,
+                "nombre": "1.1. B2, inglés y otras lenguas",
+                "valorFijo": 10,
+                "tope": 10,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": "f6ae605f-fdb8-4b3b-bd23-6b39861a24cb",
+            "nivel": 0,
+            "subCriterios": []
+        },
+        {
+            "criterio": {
+                "id": 503,
+                "idAntecesor": 30,
+                "orden": 2,
+                "nombre": "1.2. JLPT, nivel 3, japonés",
+                "valorFijo": 10,
+                "tope": 10,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": "6ec39dfe-44bd-4123-a44f-4a64ebe66984",
+            "nivel": 0,
+            "subCriterios": []
+        },
+        {
+            "criterio": {
+                "id": 902,
+                "idAntecesor": 30,
+                "orden": 3,
+                "nombre": "1.3. HSK 2, nivel 4, chino mandarín",
+                "valorFijo": 10,
+                "tope": 10,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": null,
+            "nivel": 0,
+            "subCriterios": []
+        },
+        {
+            "criterio": {
+                "id": 903,
+                "idAntecesor": 30,
+                "orden": 4,
+                "nombre": "1.4. C1, inglés y otras lenguas",
+                "valorFijo": 20,
+                "tope": 20,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": null,
+            "nivel": 0,
+            "subCriterios": []
+        },
+        {
+            "criterio": {
+                "id": 904,
+                "idAntecesor": 30,
+                "orden": 5,
+                "nombre": "1.5. JLPT, nivel 2, japonés",
+                "valorFijo": 20,
+                "tope": 20,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": null,
+            "nivel": 0,
+            "subCriterios": []
+        },
+        {
+            "criterio": {
+                "id": 905,
+                "idAntecesor": 30,
+                "orden": 6,
+                "nombre": "1.6. HSK 3, nivel 5, chino mandarín",
+                "valorFijo": 20,
+                "tope": 20,
+                "topeVeces": 1,
+                "documentos": "Constancia vigente de certificación del dominio del idioma expedida por una institución de reconocido prestigio.",
+                "nota": "",
+                "valorInicial": 0
+            },
+            "nodo": null,
+            "nivel": 0,
+            "subCriterios": []
+        }
+    ]
+}

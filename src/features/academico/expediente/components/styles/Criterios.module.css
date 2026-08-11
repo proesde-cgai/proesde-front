@@ -1,0 +1,56 @@
+.containerSubMenuCriterios {
+    padding: 10px 0;
+}
+
+.listOpcionesCriterios {
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.opcionItemCriterio {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.opcionItemCriterioButton {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: dashed 1px #054BDD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.opcionItemCriterioButton:hover {
+    background-color: #C69AFD;
+}
+
+.isActiveOpcionItemCriterio {
+    background-color: #994BFB;
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #FFFF;
+    border-bottom: dashed 1px #FFFF;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.containerTableItemsEvaluacion {
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+
+.containerSubMenuCriterios {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    /* Ensures no unintentional scroll on the parent */
+}
+

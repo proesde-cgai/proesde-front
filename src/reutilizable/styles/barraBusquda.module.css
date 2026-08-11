@@ -1,0 +1,36 @@
+.searchBar {
+  font-family: "Raleway", sans-serif;
+  float: left;
+  margin-right: 20px;
+  width: 20%;
+  height: 1100px;
+}
+
+.titleSearch {
+  text-align: center;
+}
+
+.searchContainer {
+  padding: 10px;
+  background-color: #c7d6dc;
+}
+
+.center {
+  align-items: center;
+}
+
+.search {
+  width: 83%;
+  padding: 10px;
+  border: none;
+}
+
+.size_6 {
+  transform: translateY(12px);
+  width: 30px;
+  height: 30px;
+  color: gray;
+  background-color: white;
+  padding: 2px;
+  margin-left: 5px;
+}

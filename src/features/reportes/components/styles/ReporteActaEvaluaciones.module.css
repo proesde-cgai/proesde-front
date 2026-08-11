@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  height: 100vh;
+  margin-top: 3px;
+}
+
+.containerAside {
+  width: 15%;
+  padding: 1rem;
+  border: 1px solid #b9b9b9;
+  border-style: none dashed none none;
+  background-color: #f5f5f5;
+}
+
+.containerContent {
+  padding: 1.5rem;
+  width: 85%;
+  height: 100%;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.tituloParrafo {
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+input {
+  width: 20%;
+}
+
+.inputTextParrafo {
+  padding: 2px;
+  width: 2rem;
+  min-width: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: width 0.3;
+  margin-right: 5px;
+  border: 1px solid #e3ecf6;
+}
+
+.containerOpciones {
+  margin: 10px 0 10px 0;
+}
+
+.input {
+  margin: 3px 5px 0 5px;
+  border: 1px solid #e3ecf6;
+  padding: 0 5px;
+  border-radius: 3px;
+  width: 10rem;
+}
+
+.select {
+  margin: 3px 5px 0 5px;
+  border: 1px solid #e3ecf6;
+  padding: 0 5px;
+  border-radius: 3px;
+  width: 15rem;
+}
+
+
+.inputError {
+  margin: 3px 5px 0 5px;
+  border: 1px solid #de3323;
+  border-radius: 2px;
+}
+
+.inputSmall {
+  width: 3rem;
+}
+
+.parrafoInfo {
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.inputRadio {
+  padding: 3px 0 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.inputRadio > input {
+  width: 1rem;
+}
+
+.label {
+  font-weight: normal;
+}
+
+.containerInputFechas {
+  display: flex;
+  gap: 1rem;
+  margin: 10px 0 10px 0;
+}
+
+.containerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.containerButtons > button {
+  padding: 9px 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #054bdd;
+  border: none;
+  border-radius: 5px;
+}
+
+.containerButtons > button > svg {
+  color: #00c2c7;
+}
+
+.containerButtons > button:hover {
+  background-color: #3d91e6;
+  cursor: pointer;
+}

@@ -1,0 +1,149 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .btn:disabled {
+    background-color: #6c757d;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+
+  /* Form field */
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    }
+
+    .fullWidth {
+      width: 100%; 
+    }
+
+    .inputGroup {
+      display: flex;
+      gap: 20px; 
+      align-items: center;
+    }
+
+    .inputGroup > input, .inputGroup > .switchField {
+      flex: 1; 
+    }
+
+    .inputGroup > input {
+      flex: 4;
+    }
+
+
+    
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+      
+    /* select actividad */
+    .row{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .selectAct{
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid #898989;
+    }
+
+    .label {
+      color: black;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    /* list */
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 100;
+      width: 100%;
+    }

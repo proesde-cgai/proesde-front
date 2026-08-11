@@ -1,0 +1,52 @@
+.solicitudContainer {
+  font-family: "Arial", sans-serif;
+  max-width: 900px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttonContainer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo {
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: blue;
+
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+.enviar {
+  background-color: blue;
+}
+
+.enviar:hover {
+  background-color: darkblue;
+}

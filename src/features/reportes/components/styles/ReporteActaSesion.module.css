@@ -1,0 +1,126 @@
+.containerActaAcuerdos {
+    display: flex;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.containerAside {
+    width: 15%;
+    padding: 1rem;
+    border: 1px solid #B9B9B9;
+    border-style: none dashed none none;
+    background-color: #F5F5F5;
+}
+
+.containerContent {
+    padding: 1.5rem;
+    width: 85%;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.parrafoInfo {
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.tituloParrafo {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.input {
+    margin: 3px 5px 0 5px;
+    border: 1px solid #e3ecf6;
+    padding: 0 5px;
+    border-radius: 3px;
+    width: 10rem;
+}
+
+.select {
+    margin: 3px 5px 0 5px;
+    border: 1px solid #e3ecf6;
+    padding: 0 5px;
+    border-radius: 3px;
+    width: 15rem;
+}
+
+.inputError {
+    margin: 3px 5px 0 5px;
+    border: 1px solid #DE3323;
+    border-radius: 2px;
+}
+
+.inputSmall {
+    width: 3rem;
+}
+
+.containerListMiembros {
+    margin-top: 10px;
+}
+
+.ulMiembros {
+    list-style-type: none;
+    padding: 0
+}
+
+.listItem {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.spanListItem {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.containerRestForm {
+    margin-bottom: 3rem;
+}
+
+.containerRestForm>textarea {
+    width: 50rem;
+    height: 9rem;
+    padding: 8px;
+    font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+    font-size: 16px;
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.containerButtons>button {
+    padding: 9px 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #054BDD;
+    border: none;
+    border-radius: 5px;
+}
+
+.containerButtons>button>svg {
+    color: #00c2c7;
+}
+
+.containerButtons>button:hover {
+    background-color: #3d91e6;
+    cursor: pointer;
+}
+

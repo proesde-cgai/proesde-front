@@ -1,0 +1,73 @@
+.header_user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.header_user:hover {
+  background-color: #f0f0f0;
+}
+
+.header_user_options_container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  margin-top: 10px;
+}
+
+.header_user_options {
+  /* position: fixed; */
+  min-width: max-content;
+  background-color: white;
+  width: 150px;
+
+}
+
+.header_user_option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.header_user_option:hover {
+  background-color: #f0f0f0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.optionUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  position: relative;
+}
+
+.nameUser, .tipoParticipacion {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.nameUserSpan, .tipoParticipacionSpan {
+  font-weight: 400;
+  text-transform: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.logout {
+  color: red;
+  font-weight: 600;
+}
+.logout > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}

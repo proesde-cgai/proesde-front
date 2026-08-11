@@ -1,0 +1,23 @@
+.container {
+    padding: 10px;
+    font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+    overflow-x: auto;
+  }
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  .marginBottom {
+    margin-bottom: 20px;
+  }
+  

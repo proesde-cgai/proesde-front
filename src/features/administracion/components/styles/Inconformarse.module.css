@@ -1,0 +1,175 @@
+.font {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  align-items: start;
+  margin: 0 0 4rem 0;
+}
+
+.info {
+  margin: 10px;
+}
+
+.file {
+  display: none; /* Ocultar el input file */
+}
+.buttonPdf {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.fileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.buttonPdf:hover {
+  cursor: pointer;
+}
+.labelFile {
+  font-weight: 200;
+  padding: 5px;
+  background-color: blue; /* Color original del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.dateInput {
+  width: 100%;
+  height: 40px;
+}
+
+.container {
+  margin-top: 20px;
+  font-family: "Serotiva", sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.main {
+  margin: 20px;
+}
+
+.input {
+  display: flex; /* Alinear input y botón */
+  align-items: center; /* Alinear verticalmente */
+}
+
+.requisito {
+  width: 900px;
+  margin: 10px 20px;
+}
+
+.radio {
+  display: flex;
+  margin-left: 50px;
+}
+
+.radio p {
+  margin-left: 10px;
+}
+
+.razones {
+  resize: none;
+  width: 900px;
+  height: 300px;
+}
+
+.txtArea {
+  resize: none;
+  width: 100%;
+  height: 320px;
+}
+
+.btnInput {
+  margin-top: 10px;
+  margin-left: 410px;
+}
+/* Estilo para el botón */
+.btn {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 15px;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: blue; /* Color original del botón */
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.labelFile:hover {
+  background-color: darkblue; /* Oscurecer el azul en hover */
+}
+
+.btn:hover {
+  background-color: darkblue; /* Oscurecer el azul en hover */
+}
+.fecha_ley{
+  width:200px;
+  padding-top:8px;
+}
+
+.razones{
+  margin-top: 15px;
+  margin-bottom:8px;
+}
+
+.agregar{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between; /* Distribute the buttons evenly with space in between */
+  align-items: center;
+}
+
+
+.btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.385);
+  color: white;
+}
+
+.confirmationMessage {
+  background-color: #28a745; /* Verde para éxito */
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 1rem ;
+}
+
+.confirmationMessage p {
+  margin: 0;
+}

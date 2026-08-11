@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px 8px;
+    width: 100%;
+}
+
+
+.containerData {
+    width: 100%;
+    /* Allow the container to take full width */
+    box-sizing: border-box;
+}
+
+.containerVisorDoc {
+    width: 50%;
+}
+
+.nombreDatos {
+    text-transform: capitalize;
+    color: #054BDD;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.datosNombramiento {
+    margin-top: 1rem;
+}
+
+.containerTableData {
+    margin-top: 10px;
+    padding: 15px;
+    /* Espaciado interno */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+
+
+.inputContainer {
+    background-color: #c7d6dc;
+    border-bottom: 1px solid #9E9E9E;
+    margin-bottom: 0 !important;
+    display: grid;
+    grid-template-columns: 300px auto;
+    /* Define ancho fijo para los labels */
+    align-items: center;
+    gap: 10px;
+    /* Espaciado entre columnas */
+}
+
+
+.inputContainer>label {
+    text-align: right;
+    /* Alinear texto a la derecha */
+    width: 10px;
+    /* Ancho uniforme */
+    white-space: nowrap;
+    /* Evita que el texto se quiebre */
+    margin-left: 20px;
+}
+
+.inputContainer>label::after {
+    content: ':';
+    /* Añade los dos puntos */
+}
+
+.inputContainer>input {
+    padding: 10px;
+    border-radius: 2px;
+    width: 100%;
+    /* Make sure the input takes up the full width */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow if text exceeds */
+    text-overflow: ellipsis;
+    /* Add ellipsis if text overflows */
+    font-family: Arial, sans-serif;
+}
+
+
+.main {
+    margin: 20px;
+}
+
+.input {
+    display: flex;
+    /* Alinear input y botón */
+    align-items: center;
+    /* Alinear verticalmente */
+}
+
+.requisito {
+    width: 900px;
+    margin: 10px 20px;
+}
+
+.radio {
+    display: flex;
+    margin-left: 50px;
+}
+
+.radio p {
+    margin-left: 10px;
+}
+
+.razones {
+    resize: none;
+    width: 900px;
+    height: 300px;
+}
+
+.txtArea {
+    resize: none;
+}
+
+.btnInput {
+    margin-top: 10px;
+    margin-left: 410px;
+}
+
+/* Estilo para el botón */
+.btn {
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 16px;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: blue;
+    /* Color original del botón */
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkblue;
+    /* Oscurecer el azul en hover */
+}

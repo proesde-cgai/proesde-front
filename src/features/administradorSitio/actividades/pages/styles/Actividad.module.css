@@ -1,0 +1,40 @@
+.container {
+    font-family: "Arial", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .inconformidad_title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px;
+      color: #443f3f;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 10px;
+      background-color: #f0f0f040;
+      font-family: "Sarabun", sans-serif, 'EBGaramond', serif;    
+    }
+
+    /* header */
+
+    .btnContainer {
+      display: flex;
+      justify-content: end; 
+      align-items: center;
+      margin: 20px;
+      margin-right: 0px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #0d6efd;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  

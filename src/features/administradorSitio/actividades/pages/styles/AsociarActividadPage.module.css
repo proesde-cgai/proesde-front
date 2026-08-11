@@ -1,0 +1,101 @@
+.container {
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #443f3f;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  background-color: #f0f0f040;
+  font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+}
+
+.container_aside {
+  display: flex;
+  border: 1px solid #B9B9B9;
+  border-style: none dashed none none;
+}
+
+.solicitudContainer {
+  width: 100%;
+  padding: 1rem;
+}
+
+.aside {
+  width: 30%;
+  padding: 1rem;
+  border-right: 1px dashed #b9b9b9;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: auto;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.inputField label {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.input {
+  display: block;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #898989;
+}
+
+.input:focus {
+  border-color: #898989;
+  outline: none;
+}
+
+input:disabled {
+  cursor: not-allowed;
+  color: #898989;
+}
+.instructions{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #b9b9b9;
+}

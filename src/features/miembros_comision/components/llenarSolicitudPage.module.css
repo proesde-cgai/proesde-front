@@ -1,0 +1,220 @@
+.important {
+  color: red;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  min-width: 100px;
+  height: auto;
+}
+
+.cancelar {
+  background-color: white;
+  color: black;
+}
+
+.cancelar:hover {
+  cursor: pointer;
+  background-color: rgb(139, 139, 139);
+}
+
+.enviar {
+  background-color: black;
+  color: white;
+}
+
+.enviar:hover {
+  cursor: pointer;
+  background-color: rgb(139, 139, 139);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+input {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #000;
+}
+
+.details_container {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form {
+  margin-left: 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form_data {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  display: block;
+}
+
+.form_data input {
+  margin-bottom: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form_data label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.solicirudTitle {
+  margin-left: 30px;
+}
+
+.bold {
+  font-weight: bold;
+  display: block;
+}
+
+.list {
+  list-style-type: disc;
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media (max-width: 1024px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_data {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .form_data label,
+  .form_data input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form_data input {
+    margin-bottom: 20px; /* Mantiene el margen inferior para los inputs en pantallas medianas */
+  }
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_data {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .form_data label,
+  .form_data input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form_data input {
+    margin-bottom: 20px; /* Mantiene el margen inferior para los inputs en pantallas pequeñas */
+  }
+}
+
+/* Estilos responsivos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .form_data label,
+  .form_data input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .form_data input {
+    margin-bottom: 20px; /* Mantiene el margen inferior para los inputs en pantallas muy pequeñas */
+  }
+}
+
+.solicitudContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Ajustes para pantallas anchas */
+@media (max-width: 1550px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_data {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .form_data label,
+  .form_data input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form_data input {
+    margin-bottom: 20px; /* Mantiene el margen inferior para los inputs en pantallas anchas */
+  }
+}
+
+@media (max-width: 1024px) {
+  .solicitudContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .solicitudContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .solicitudContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Estilos para manejar errores de validación */
+.errorInput {
+  border-bottom: 2px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+  display: block;
+}

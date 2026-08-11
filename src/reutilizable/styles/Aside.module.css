@@ -1,0 +1,303 @@
+/* width */
+.aside::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.aside::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+.aside::-webkit-scrollbar-thumb {
+  background: #4b4b4b;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.aside::-webkit-scrollbar-thumb:hover {
+  background: #807b7b;
+}
+
+.aside {
+  height: 100%;
+  background-color: #c7d6dc;
+  overflow-y: auto;
+}
+
+.filters {
+  display: flex;
+  height: 190px;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 5px;
+}
+
+.filter_search {
+  padding: 5px;
+}
+
+.containerList {
+  display: flex;
+  padding-top: 10px;
+  background-color: #c7d6dc;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.pBusquedaAvanzada {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background-color: #4a4a4a;
+  padding: 8px 16px;
+  height: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pBusquedaAvanzada:hover {
+  background-color: #333333;
+}
+
+.pBusquedaAvanzada:active {
+  background-color: #1a1a1a;
+  transform: scale(0.98);
+}
+
+.item_list {
+  border-top: 1px solid #e7e7e7;
+  padding: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isSelected,
+.item_list:hover {
+  background-color: #054bdd;
+  cursor: pointer;
+
+  .itemParrafo,
+  .spanTipo {
+    color: #ffff;
+  }
+}
+
+.itemParrafo {
+  font-weight: 600;
+  font-size: 16px;
+  color: #013b9d;
+}
+
+.span_cargo {
+  color: #1aa485;
+  text-transform: uppercase;
+}
+
+.parrafoSpan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.span_nivel {
+  display: block;
+  width: 28px;
+  height: 20px;
+  text-align: center;
+  background-color: #ffd536;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 16px;
+}
+
+.spanTipo {
+  color: #013b9d;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.arrowBoth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 1;
+  text-align: right;
+  color: black;
+  background-color: #c7d6dc;
+  padding: 8px 16px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust opacity as needed */
+  z-index: 10;
+  /* Ensure it sits above other elements */
+}
+
+.eVacio {
+  background-color: crimson;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.eAtendido {
+  background-color: lightgreen;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.eEvaluado {
+  background-color: lightgreen;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hiddenSelect {
+  display: none;
+}
+
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0 4px 0;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  min-width: 0;
+  font-size: 12px;
+  margin: 0px 8px;
+}
+
+.paginationButton {
+  /* background-color: #4a4a4a; */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  min-width: 28px;
+  min-height: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.paginationButton:disabled {
+  background-color: #cccccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.paginationInfo {
+  font-size: 13px;
+  color: #2b2b2b;
+  font-weight: 500;
+  padding: 0 3px;
+  letter-spacing: -0.5px;
+}
+
+.disabled {
+  background-color: #cccccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.totalRecords {
+  font-size: 13px;
+  color: #2b2b2b;
+  font-weight: 500;
+  padding: 0 3px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+.countAndButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Cambiar de space-between a flex-end */
+  width: 100%;
+}
+
+.countText {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nombreAcademico{
+  position: relative;
+}
+
+/* ESTADOS SOLICITUD */
+.estadoSolicitudContainer {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.estadoSolicitudRounded{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(203, 248, 90);
+}
+
+.estadoSolicitudText{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.estadoSolicitudTextStatus{
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 2px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: #054BDD;
+}
+

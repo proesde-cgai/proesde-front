@@ -1,0 +1,160 @@
+.containerNotas {
+    height: 100vh;
+    padding: 5px;
+  }
+  
+  .tituloNotas {
+    color: #054BDD;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  /* width */
+  .containerEntradas::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .containerEntradas::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #c7c7c7;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  .containerEntradas::-webkit-scrollbar-thumb {
+    background: #4B4B4B;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .containerEntradas::-webkit-scrollbar-thumb:hover {
+    background: #807b7b;
+  }
+  
+  .containerEntradas {
+    height: 13rem;
+    border: 2px solid #A9A9A9;
+    border-radius: 3px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .containerEntradaComentario {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .containerEntradaComentario:nth-child(2n+1) {
+    background-color: #A9A9A9;
+  }
+  
+  .containerEntradaComentario > p {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .containerAgregarEntrada {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerTextareaEntrada {
+    width: 80%;
+  }
+  .containerTextareaEntrada > p {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #c7c7c7;
+  }
+  .containerTextareaEntradaError > textarea {
+    border: 1px solid #DE3323;
+  }
+  .containerTextareaEntrada > textarea {
+    width: 99%;
+    resize: vertical;
+    font-family: "Sarabun", sans-serif, 'EBGaramond', serif;
+    font-size: 14px;
+  }
+  
+  .buttonsTextareaEntrada {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .btnAgregarComentario {
+    padding: 9px 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #054BDD;
+    border: none;
+    border-radius: 5px;
+  }
+  .btnAgregarComentario:hover {
+    background-color: #3d91e6;
+    cursor: pointer;
+  }
+
+  .btnAgregarComentario:disabled{
+    background-color: #807b7b;
+    cursor: not-allowed;
+  }
+  
+  .btnComentarioLeido {
+    padding: 9px 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #198754;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btnCancelar {
+    padding: 9px 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #DE3323;
+    border: none;
+    border-radius: 5px;
+  }
+  .btnCancelar:hover{
+    background-color: #cf594e;
+    cursor: pointer;
+  }
+  
+  .fileContainer{
+    margin: 10px;
+  }
+
+  .form {
+    align-items: start;
+  }
+
+  .file {
+    display: none; /* Ocultar el input file */
+  }
+
+  .dateInput {
+    margin: 10px;
+    
+  }
+
+  .info {
+    margin: 10px;
+  }
+
+  .labelFile {
+    font-weight: 200;
+    padding: 5px;
+    background-color: blue; /* Color original del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .labelFile:hover {
+    background-color: darkblue; /* Oscurecer el azul en hover */
+  }  

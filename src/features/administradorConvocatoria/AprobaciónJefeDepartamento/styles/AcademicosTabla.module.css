@@ -1,0 +1,434 @@
+.card {
+    padding: 1.5rem;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHeaderRow {
+    border-bottom: 2px solid #d1d5db;
+    background-color: #007bff;
+}
+
+.tableHeader {
+    text-align: left;
+    padding: 0.75rem 0.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tableRowAlert {
+    background-color: #fee2e2;
+}
+
+.tableRowEven {
+    background-color: #f9fafb;
+}
+
+.tableRowOdd {
+    background-color: white;
+}
+
+.tableCell {
+    padding: 0.75rem 0.5rem;
+    color: #111827;
+}
+
+.cellContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.alertIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #dc2626;
+    flex-shrink: 0;
+}
+
+.loadingText {
+    color: #6b7280;
+    font-style: italic;
+}
+
+.errorText {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.inputEdit {
+    width: 6rem;
+    height: 2.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border: 2px solid #9ca3af;
+    border-radius: 0.375rem;
+    outline: none;
+}
+
+.inputEdit:focus {
+    border-color: #2563eb;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.buttonEdit {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttonEdit:hover {
+    background-color: #1d4ed8;
+}
+
+.buttonClose {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttonClose:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.buttonCancel {
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttonCancel:hover:not(:disabled) {
+    background-color: #b91c1c;
+}
+
+.buttonDelete {
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttonDelete:hover {
+    background-color: #b91c1c;
+}
+
+.actionButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.buttonPurple {
+    background-color: #751daa;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.buttonPurple:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buttonDisabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Modal styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    z-index: 1000;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.warningIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warningIcon {
+    width: 3rem;
+    height: 3rem;
+    color: #f59e0b; 
+    fill: #f59e0b;
+}
+
+.modalTitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #111827;
+    margin: 0;
+}
+
+.modalMessage {
+    text-align: center;
+    color: #4b5563;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.modalInfo {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: transparent;
+    border: none;
+    border-radius: 0.375rem;
+}
+
+.modalInfoTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.modalInfoHeaderCell {
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    background-color: #f9fafb;
+}
+
+.modalInfoValueCell {
+    color: #111827;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+.modalInfoTable thead {
+    background-color: #ffffff;
+}
+
+.modalInfoBodyRow {
+    background-color: #fee2e2;
+}
+
+.modalInfoRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.modalInfoRow:last-child {
+    margin-bottom: 0;
+}
+
+.modalInfoLabel {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.875rem;
+}
+
+.modalInfoValue {
+    color: #111827;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.alertIconSmall {
+    width: 1rem;
+    height: 1rem;
+    color: #dc2626;
+    flex-shrink: 0;
+}
+
+.modalButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.modalButtonCancel {
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modalButtonCancel:hover {
+    background-color: #b91c1c;
+}
+
+.modalButtonConfirm {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modalButtonConfirm:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .modalInfoHeaderCell,
+    .modalInfoValueCell {
+        padding: 0.5rem;
+        font-size: 0.8125rem;
+    }
+
+    .table {
+        font-size: 0.875rem;
+    }
+
+    .tableHeader,
+    .tableCell {
+        padding: 0.5rem 0.25rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+    }
+
+    .modal {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .modalInfoRow {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .modalButtons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .modalButtonCancel,
+    .modalButtonConfirm {
+        width: 100%;
+    }
+}
+
+.table thead,
+.tableHeaderRow,
+.tableHeader {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+/* Mantener color de fila al pasar el cursor */
+.tableRowEven:hover { 
+    background-color: #f9fafb !important; 
+}
+
+.tableRowOdd:hover { 
+    background-color: #ffffff !important; 
+}
+
+.tableRowAlert:hover { 
+    background-color: #fee2e2 !important; 
+}
+
+.modalInfoValueCell:hover { 
+    background-color: #fee2e2 !important;
+}
+
+.modalInfoBodyRow { 
+    background-color: #fee2e2 !important;
+}
+
+.modalInfoHeaderCell { 
+    background-color: #f9fafb !important; 
+}
+
+.table tr { 
+    cursor: default; 
+}

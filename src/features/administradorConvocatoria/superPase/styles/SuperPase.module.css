@@ -1,0 +1,162 @@
+.container {
+  padding: 20px;
+}
+
+.mainContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 10px;
+}
+
+.formContainer {
+  width: 100%;
+  height: max-content;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.form {
+  /* width: 40%; */
+  margin-left: 10px;
+}
+
+.textAlert {
+  text-align: center;
+  color: rgb(185, 0, 0);
+  font-weight: bold;
+}
+
+.containerAside {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 30vh;
+  margin-top: 0;
+}
+
+.inputField {
+  width: 100%; /* Asegura que el ancho sea igual al contenedor padre */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+  margin-top: 10px;
+}
+
+.inputField {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.inputField:focus {
+  border-color: #054bdd;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.inputField::placeholder {
+  font-size: 14px;
+}
+
+.codigo {
+  font-weight: bold;
+}
+
+.button {
+  background-color: #054bdd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.buttonForm {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.subTiles {
+  border: none;
+  background-image: url("../../../../assets/images/v_hlp_op.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 8px;
+  text-align: left;
+  color: #222222;
+  font-weight: bold;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.fechaInput {
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.menu {
+  margin-top: 10px;
+  background-color: #c7d6dc;
+  padding: 10px 0px 0px 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.menuOption {
+  background-color: #d7d7d8;
+  border-radius: 10px 10px 0px 0px;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  border: none;
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: white;
+}
+
+.subMenu {
+  margin-top: 5px;
+}
+
+.optionMenu {
+  padding: 10px 10px;
+  background-color: #ffff;
+  font-family: "Sarabun", sans-serif, "EBGaramond";
+}
+
+.subMenuOption {
+  background-color: #d7d7d8;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  border: none;
+  margin-left: 5px;
+}
+
+.subMenuOption:hover {
+  background-color: #c7d6dc;
+  cursor: pointer;
+}
