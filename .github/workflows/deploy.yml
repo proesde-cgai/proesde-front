@@ -1,0 +1,33 @@
+name: Deploy Frontend (Develop)
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy Frontend
+        run: |
+          set -e
+
+          FRONTEND_DIR="/var/www/proesde/proesde-front"
+
+          echo "=== Desplegando Frontend en $FRONTEND_DIR ==="
+
+          cd "$FRONTEND_DIR"
+
+          echo "=== Actualizando código ==="
+          git fetch origin develop
+          git reset --hard origin/develop
+
+          echo "=== Instalando dependencias ==="
+          npm install --no-audit --no-fund
+
+          echo "=== Compilando Frontend ==="
+          npm run build
+
+          echo "=== Frontend desplegado exitosamente ==="

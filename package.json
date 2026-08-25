@@ -40,8 +40,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ],
     "rules": {
       "no-unused-vars": "off"
@@ -58,9 +57,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devServer": {
-    "disableHostCheck": true
   },
   "devDependencies": {
     "dotenv-cli": "^7.4.2"
