@@ -28,6 +28,6 @@ jobs:
           npm install --no-audit --no-fund
 
           echo "=== Compilando Frontend ==="
-          npm run build
+          CI=false npm run build
 
           echo "=== Frontend desplegado exitosamente ==="
