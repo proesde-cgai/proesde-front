@@ -25,7 +25,7 @@ export const Header = () => {
             // Render logo
             <div
             dangerouslySetInnerHTML={{
-              __html: logo.replace(/(width|height)="\d*"/g, ""), // Remove fixed dimensions
+              __html: logo.replace(/(width|height)="[^"]*"/g, ""), // Remove fixed dimensions
             }}
             className={styles.resizedSvg}
             />

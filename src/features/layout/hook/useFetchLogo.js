@@ -7,31 +7,48 @@ import {
 } from "../service/bannerService";
 
 const useFetchLogo = () => {
-  const [logo, setLogo] = useState(null);
-  const [loading, setLoading] = useState(true); 
+  const [logo, setLogo] = useState(() => {
+    try {
+      return sessionStorage.getItem("proesde_banner_logo") || null;
+    } catch {
+      return null;
+    }
+  });
+  const [loading, setLoading] = useState(!logo); 
   const [error, setError] = useState(null);
 
   const obtainBannerLogo = async () => {
-    setLoading(true);
+    if (!logo) {
+      setLoading(true);
+    }
     setError(null); 
 
     try {
       let data;
 
       try {
-          const token = await getAccessToken();
-          if (token) {
-            data = await getBannerLogo(); 
-          }
-        } catch (authError) {
-          data = await getBannerPublic(); // Fallback to public banner
+        const token = await getAccessToken();
+        if (token) {
+          data = await getBannerLogo(); 
         }
+      } catch (authError) {
+        data = await getBannerPublic(); // Fallback to public banner
+      }
 
-      setLogo(data); 
+      if (data) {
+        setLogo(data);
+        try {
+          sessionStorage.setItem("proesde_banner_logo", data);
+        } catch (e) {
+          console.warn("Could not cache banner logo", e);
+        }
+      }
 
     } catch (error) {
       console.log(error.message);
-      setError("Unable to load logo. Please try again later.");
+      if (!logo) {
+        setError("Unable to load logo. Please try again later.");
+      }
 
     } finally {
       setLoading(false); 
