@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { login } from "../../../../features/authService";
 import styles from "./login.styles.module.css";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +22,7 @@ export const LoginComponent = () => {
 
   const [error, setError] = useState("");
   const [showRoleModal, setShowRoleModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const [roles, setRoles] = useState([]);
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ export const LoginComponent = () => {
         setError("");
       }, 3000);
     } else {
+      setIsSubmitting(true);
       try {
         // Llamar a la función de login y obtener roles
         const { rolesAsArray } = await login(usuario, fechaNacimiento);
@@ -47,7 +49,8 @@ export const LoginComponent = () => {
         }
       } catch (error) {
         setError(error.message);
-      }finally {
+      } finally {
+        setIsSubmitting(false);
         setTimeout(() => {
           setError("");
         }, 10000);
@@ -55,7 +58,6 @@ export const LoginComponent = () => {
       }
     }
   };
-
 
   // Función para manejar la redirección basada en el rol seleccionado
   const handleRedirection = async (selectedRole) => {
@@ -82,7 +84,7 @@ export const LoginComponent = () => {
     } catch (error) {
       console.error("Error fetching fecha:", error);
       setError("Error al obtener la fecha de convocatoria.");
-    }finally {
+    } finally {
       setTimeout(() => {
         setError("");
       }, 3000);
@@ -132,12 +134,12 @@ export const LoginComponent = () => {
         break;
 
       case "comision_ingreso_promocion_personal_academico_sems":
-        console.log("nevegando a /comision_ingreso_promocion_personal_academico_sems")
+        console.log("nevegando a /comision_ingreso_promocion_personal_academico_sems");
         navigate("/comision_ingreso_promocion_personal_academico_sems");
         break;
 
       case "comision_ingreso_promocion_personal_academico_h_cgu":
-        console.log("nevegando a /comision_ingreso_promocion_personal_academico_h_cgu")
+        console.log("nevegando a /comision_ingreso_promocion_personal_academico_h_cgu");
         navigate("/comision_ingreso_promocion_personal_academico_h_cgu");
         break;
 
@@ -164,124 +166,135 @@ export const LoginComponent = () => {
         break;
       default:
         break;
-      /* default:
-        console.log("Navegando a /default-dashboard");
-        navigate("/default-dashboard");
-        break; */
     }
   };
 
-  // useEffect(() => {
-  //   if (error) {
-  //     const timer = setTimeout(() => {
-  //       setError(""); // Limpiar el error después de 3 segundos
-  //     }, 10000);
-
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [error]);
-  
   return (
-    <div>
-      <div className={styles.main}>
-        <p className={styles.text}>
-          Bienvenido al Programa de
-          <br />
-          <span className={styles.fontxl}>
-            Estímulos al Desempeño Docente (PROESDE) {displayDate}
-          </span>
-        </p>
-
-        <div className={styles.login_container_head}>
-          <span className={styles.textlogin}>
-            Para ingresar al sistema por favor proporcione su usuario y contraseña
-          </span>
-        </div>
-
-        <div className={styles.login_container}>
-          <form onSubmit={handleSubmit}>
-            <div className={styles["form-group"]}>
-              <label htmlFor="usuario" className={styles.label}>
-                USUARIO / CÓDIGO
-              </label>
-              <div className={styles.formplace}>
-                <input
-                  id="usuario"
-                  type="text"
-                  className={styles.input}
-                  value={usuario}
-                  onChange={(e) => setUsuario(e.target.value)}
-                />
-                <span className={styles.placeholder}>(Su código, si es académico)</span>
-              </div>
-            </div>
-            <div className={styles["form-group"]}>
-              <label htmlFor="fecha_nacimiento" className={styles.label}>
-                CONTRASEÑA
-              </label>
-              <div className={styles.formplace}>
-                <input
-                  id="fecha_nacimiento"
-                  type="password"
-                  className={styles.input}
-                  value={fechaNacimiento}
-                  onChange={(e) => setFechaNacimiento(e.target.value)}
-                  placeholder=""
-                  maxLength={16}
-                  title="Maximo 16 caracteres"
-                />
-                <span className={styles.placeholder}>(Contraseña)</span>
-              </div>
-            </div>
-            <div className={styles["button-container"]}>
-              <button className={styles.button}>Ingresar</button>
-            </div>
-
-            {error && (
-              <div
-                className={styles.error}
-                dangerouslySetInnerHTML={{ __html: error }}
-              ></div>
-            )}          
-          </form>
-        </div>
-
-        <div className={styles.infoSection}>
-          <p className={styles.infoText}>
-            Si desea consultar la convocatoria, tabla de puntaje y reglamento del PROESDE,<br />
-            puede hacerlo mediante el portal de la CGAI:
-          </p><br />
-          <button className={styles.infoButton}>
-            <a href="https://proesde.udg.mx/">
-            Coordinación General Académica y de Innovación
-            </a>
-          </button>
-        </div>
-
-        <div className={styles.contactSection}>
-          <p className={styles.contactInfo}>
-            Cualquier duda o inquietud referente al sistema o <br /> 
-            a la convocatoria PROESDE, favor de comunicarse <br />
-            vía correo electrónico a: <a href="mailto:proesde@udg.mx">proesde@udg.mx</a>. <br />
+    <div className={styles.pageContainer}>
+      <div className={styles.mainContent}>
+        {/* Título de Bienvenida */}
+        <div className={styles.welcomeSection}>
+          <p className={styles.welcomeText}>
+            Bienvenido al Programa de
+            <br />
+            <span className={styles.proesdeTitle}>
+              Estímulos al Desempeño Docente (PROESDE){" "}
+              <span className={styles.dateHighlight}>{displayDate}</span>
+            </span>
           </p>
         </div>
 
-        <div className={styles.browserCompatibility}>
-          <p></p><br />
+        {/* Tarjeta de Formulario de Login */}
+        <div className={styles.loginWrapper}>
+          <div className={styles.loginHeader}>
+            <p className={styles.loginHeaderText}>
+              Para ingresar al sistema por favor proporcione su usuario y contraseña
+            </p>
+          </div>
+
+          <div className={styles.loginBody}>
+            <form onSubmit={handleSubmit} className={styles.loginForm}>
+              <div className={styles.formGroup}>
+                <div className={styles.labelWrapper}>
+                  <label htmlFor="usuario" className={styles.formLabel}>
+                    USUARIO / CÓDIGO
+                  </label>
+                  <span className={styles.inputHint}>
+                    (Su código, si es académico)
+                  </span>
+                </div>
+                <input
+                  id="usuario"
+                  type="text"
+                  className={styles.formInput}
+                  placeholder="Ingrese su usuario o código"
+                  value={usuario}
+                  onChange={(e) => setUsuario(e.target.value)}
+                  autoComplete="username"
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <div className={styles.labelWrapper}>
+                  <label htmlFor="fecha_nacimiento" className={styles.formLabel}>
+                    CONTRASEÑA
+                  </label>
+                  <span className={styles.inputHint}>
+                    (Contraseña)
+                  </span>
+                </div>
+                <input
+                  id="fecha_nacimiento"
+                  type="password"
+                  className={styles.formInput}
+                  placeholder="••••••••••••"
+                  value={fechaNacimiento}
+                  onChange={(e) => setFechaNacimiento(e.target.value)}
+                  maxLength={16}
+                  title="Máximo 16 caracteres"
+                  autoComplete="current-password"
+                />
+              </div>
+
+              {error && (
+                <div
+                  className={styles.errorMessage}
+                  dangerouslySetInnerHTML={{ __html: error }}
+                ></div>
+              )}
+
+              <div className={styles.buttonRow}>
+                <button 
+                  type="submit" 
+                  className={styles.submitBtn}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Ingresando..." : "Ingresar"}
+                </button>
+              </div>
+
+              {/* Mensaje de dudas y soporte integrado */}
+              <div className={styles.cardDivider}></div>
+              <div className={styles.cardContactBox}>
+                <p className={styles.cardContactText}>
+                  Cualquier duda o inquietud referente al sistema o a la convocatoria PROESDE,
+                  favor de comunicarse vía correo electrónico a:{" "}
+                  <a href="mailto:proesde@udg.mx" className={styles.cardEmailLink}>
+                    proesde@udg.mx
+                  </a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        {/* Sección Informativa CGAI */}
+        <div className={styles.cgaiSection}>
+          <p className={styles.cgaiText}>
+            Si desea consultar la convocatoria, tabla de puntaje y reglamento del PROESDE,
+            <br />
+            puede hacerlo mediante el portal de la CGAI:
+          </p>
+          <a
+            href="https://proesde.udg.mx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cgaiButton}
+          >
+            Coordinación General Académica y de Innovación
+          </a>
         </div>
       </div>
 
-      <div>
-        <RoleSelectionModal
-          open={showRoleModal}
-          roles={roles}
-          onClose={() => setShowRoleModal(false)}
-          onConfirmRole={(selectedRole) => {
-            setShowRoleModal(false);
-            handleRedirection(selectedRole);
-          }}
-        />
-      </div>
+      <RoleSelectionModal
+        open={showRoleModal}
+        roles={roles}
+        onClose={() => setShowRoleModal(false)}
+        onConfirmRole={(selectedRole) => {
+          setShowRoleModal(false);
+          handleRedirection(selectedRole);
+        }}
+      />
     </div>
   );
 };

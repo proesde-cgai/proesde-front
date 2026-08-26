@@ -1,268 +1,409 @@
-.login_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 65%; /* Ensure width matches both containers */
-  padding: 0px 5px;
-  background-color: white;
-  color: #333;
-  margin: 0px auto;
-  border: 1px solid #0943e2;
-}
+/* ==========================================================================
+   ESTILOS LOGIN PROESDE - DISEÑO ARMONIZADO CON DEGRADADO ANIMADO
+   Fondo Rápido (#482B32 a #516F58) + Tarjeta Glass / Slate Elegante
+   ========================================================================== */
 
-.login_container_head {
-  background-color: #0943e2;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 65%;
-  padding: 10px 6px;
-  margin: 0 0; /* Center the header as well */
-  color: white; /* Assuming text is white on the dark background */
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  flex-direction: column;
-}
-.error{
-  padding: 15px;
-  font-size: large;
-  font-weight: bold;
-  background-color: rgba(255, 0, 0, 0.385);
-  color: white;
-  text-align: justify;
-}
-
-.contacto {
-  color: white;
-  text-align: center;
-}
-
-.button {
-  margin-top: 30px; /* Ajusta la distancia superior para que esté más cerca del input */
-  background-color: #0943e2; /* Color del botón */
-  padding: 5px 20px; /* Ajusta el tamaño del botón */
-  border-radius: 5px; /* Bordes redondeados */
-  color: white;
-  font-weight: bold;
-  font-size: 1rem; /* Tamaño del texto dentro del botón */
-  text-align: center; /* Asegura que el texto esté centrado */
-  border: none;
-  cursor: pointer;
-  width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
-  max-width: 100px; /* Limita el ancho máximo del botón */
-  margin-bottom: 20px;
-}
-
-.button:hover {
-  background-color: #3d91e6; /* Color al pasar el mouse por encima */
-}
-
-.button-container {
-  display: flex;
-  justify-content: center; /* Centra el botón dentro de su contenedor */
-}
-
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-}
-.form-group {
-  display: flex;
-  align-items: center; /* Vertically center label and input */
-  justify-content: space-between; /* Distribute space between label and input */
-  width: 100%; /* Ensure it takes full width */
-  margin-bottom: 15px; /* Add some space between each row */
-}
-.formplace {
+.pageContainer {
   width: 100%;
   display: flex;
-  flex-direction: column; /* Asegura que el input y el placeholder estén en columna */
-}
-.placeholder {
-  font-size: 14px;
-  color: #bbbacb;
-  margin-top: 5px; /* Espacio entre el input y el placeholder */
-  text-align: center; /* Alinea el placeholder a la izquierda */
-}
-.input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-
-
-.label {
-  flex-basis: 30%; /* Label takes 30% of the width */
-  margin-right: 10px;
-  margin-top: 0px;
-  font-weight: bold;
-  color: black;
-  text-align: left; /* Right-align the label */
-}
-
-
-.input {
-  margin-top: 20px;
-  flex-basis: 100%; /* Input takes 70% of the width */
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #e3ecf6;
-  height: 10px; 
-  transition: border-color 0.3s ease;
-}
-
-input:focus {
-  border-color: #19357b;
-  outline: none;
-}
-
-.login_text {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000000;
-  font-size: 1rem;
-}
-
-.text {
-  text-align: center;
-  font-weight: bold;
-  margin: 40px 0;
-  font-size: xx-large;
-}
-.textlogin {
-  text-align: center;
-  font-weight: bold;
+  flex-direction: column;
   align-items: center;
-  margin: 0px 0;
-  font-size: 16px;
-  color: white;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 
-.email_info {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.fontxl {
-  font-size: xx-large;
-}
-.infoSection {
-  margin-top: 40px;
-  text-align: center;
-}
-.contactSection {
-  margin-top: 40px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: #c7d6dc;
+.mainContent {
   width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 50px 20px;
+  box-sizing: border-box;
 }
 
-.infoText {
-  font-size: 18px;
-  color: #47464b;
-  font-weight: bold;
+/* ==========================================================================
+   1. CABECERA Y TÍTULO HERO (Animación Slide Down)
+   ========================================================================== */
+.welcomeSection {
+  text-align: center;
+  margin-bottom: 26px;
+  animation: slideDownFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.infoButton {
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcomeText {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0;
+  line-height: 1.3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.3px;
+}
+
+.proesdeTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
   display: inline-block;
-  background-color: #00bfa6;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 0px;
-  font-weight: bold;
+  margin-top: 4px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  letter-spacing: -0.3px;
 }
 
-.contactInfo {
-  font-size: 14px;
-  margin-top: 20px;
-  color: #47464b;
-  font-weight: bold;
-}
-.contactInfo a{
-  color: #47464b;
-  font-weight: bolder;
-  text-decoration: none;
+.dateHighlight {
+  color: #ffffff;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.22);
+  padding: 2px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  margin-left: 6px;
 }
 
-.browserCompatibility {
-  margin-top: 20px;
+/* ==========================================================================
+   2. TARJETA DE LOGIN MODERNA (Harmonizada con el Fondo)
+   ========================================================================== */
+.loginWrapper {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  animation: professionalEntrance 1.1s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loginWrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+@keyframes professionalEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.85);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Cabecera de la Tarjeta */
+.loginHeader {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 16px 24px;
   text-align: center;
-  font-size: 14px;
-  color: #47464b;
+  border-bottom: 2px solid #516f58;
 }
 
+.loginHeaderText {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+  color: #f8fafc;
+  line-height: 1.4;
+}
 
-@media (max-width: 1024px) {
-  .login_container {
-    padding: 5% 8%;
-    margin: 30px auto;
+/* Cuerpo del Formulario */
+.loginBody {
+  background-color: #ffffff;
+  padding: 26px 36px 18px 36px;
+  box-sizing: border-box;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Filas de entrada con etiquetas limpias arriba */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.labelWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.formLabel {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.inputHint {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.formInput {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.formInput:hover {
+  border-color: #94a3b8;
+  background-color: #ffffff;
+}
+
+.formInput:focus {
+  background-color: #ffffff;
+  border-color: #516f58;
+  box-shadow: 0 0 0 4px rgba(81, 111, 88, 0.2);
+}
+
+/* Botón Ingresar */
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.submitBtn {
+  width: 100%;
+  height: 46px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+  border-color: #516f58;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Alerta de Error */
+.errorMessage {
+  margin-top: 14px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  text-align: center;
+  animation: shakeAlert 0.4s ease-in-out;
+}
+
+@keyframes shakeAlert {
+
+  0%,
+  100% {
+    transform: translateX(0);
   }
 
-  .login_text {
-    font-size: 0.9rem;
+  20%,
+  60% {
+    transform: translateX(-5px);
   }
 
-  .text {
-    font-size: 1.2rem;
-    margin: 30px 0;
-  }
-
-  .email_info {
-    margin: 10px 0;
+  40%,
+  80% {
+    transform: translateX(5px);
   }
 }
 
+/* Mensaje de dudas dentro de la tarjeta */
+.cardDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 10px 0 8px 0;
+}
+
+.cardContactBox {
+  background-color: #f8fafc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.cardContactText {
+  font-size: 0.82rem;
+  color: #475569;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+  margin: 0;
+}
+
+.cardEmailLink {
+  color: #1e293b;
+  font-weight: 800;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.cardEmailLink:hover {
+  color: #516f58;
+}
+
+/* ==========================================================================
+   3. SECCIÓN INFORMATIVA CGAI (Portal de Convocatoria)
+   ========================================================================== */
+.cgaiSection {
+  margin-top: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.6s ease 0.2s backwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cgaiText {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 12px 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.cgaiButton {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 11px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+}
+
+.cgaiButton:hover {
+  background: #ffffff;
+  color: #1e293b;
+  border-color: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   4. RESPONSIVIDAD
+   ========================================================================== */
 @media (max-width: 768px) {
-  .login_container {
-    padding: 6% 10%;
-    margin: 20px auto;
+  .mainContent {
+    padding: 20px 15px;
   }
 
-  .login_text {
-    font-size: 0.8rem;
+  .welcomeText {
+    font-size: 1.18rem;
   }
 
-  .text {
-    font-size: 1rem;
-    margin: 20px 0;
+  .proesdeTitle {
+    font-size: 1.4rem;
   }
 
-  .email_info {
-    margin: 0;
+  .loginBody {
+    padding: 24px 20px;
+  }
+
+  .labelWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
   }
 }
 
 @media (max-width: 480px) {
-  .login_container {
-    padding: 8% 12%;
-    margin: 10px auto;
+  .welcomeText {
+    font-size: 1.05rem;
   }
 
-  .login_text {
-    font-size: 0.7rem;
+  .proesdeTitle {
+    font-size: 1.25rem;
   }
 
-  .text {
-    font-size: 0.9rem;
-    margin: 10px 0;
+  .loginHeaderText {
+    font-size: 0.88rem;
   }
 
-  .email_info {
-    margin: 10px 0;
+  .cgaiButton {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 14px;
+    box-sizing: border-box;
   }
 }

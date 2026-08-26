@@ -1,0 +1,70 @@
+.loginPageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Degradado que cubre ABSOLUTAMENTE toda la pantalla */
+  background: linear-gradient(135deg,
+      #482b32 0%,
+      #2c1c21 20%,
+      #3b483e 45%,
+      #516f58 70%,
+      #482b32 100%);
+  background-size: 280% 280%;
+  animation: smoothGradientMove 9s ease-in-out infinite;
+}
+
+@keyframes smoothGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Banner de arriba: aparece DESPUÉS con fade y slide down */
+.animatedHeader {
+  width: 100%;
+  animation: headerFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.75s backwards;
+}
+
+@keyframes headerFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer de abajo: aparece DESPUÉS con fade y slide up */
+.animatedFooter {
+  width: 100%;
+  animation: footerFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.85s backwards;
+}
+
+@keyframes footerFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
