@@ -294,7 +294,7 @@ export const LlenarSolicitudPage = () => {
             }}
           >
             <FontAwesomeIcon icon={faRotate} />
-            {isRatifiedInEvaluation ? "Cambiar a Convocatoria" : "Cambiar a Ratificación"}
+            {isRatifiedInEvaluation ? "Cambiar a ser evaluado en la convocatoria actual" : "Cambiar a Ratificación de Nivel"}
           </button>
         </div>
 

@@ -100,11 +100,11 @@ export const RatificacionModal = ({
                   </button>
                 </div>
 
-                {/* Opción 2: Participar en Convocatoria */}
+                {/* Opción 2: Participar para ser evaluado en Convocatoria */}
                 <div className={styles.optionCard} onClick={handleSelectParticipate}>
                   <div className={styles.cardHeader}>
                     <FontAwesomeIcon icon={faFileLines} className={styles.cardIcon} />
-                    <h5 className={styles.cardTitle}>Participar en la convocatoria actual</h5>
+                    <h5 className={styles.cardTitle}>Ser evaluado en la convocatoria actual</h5>
                   </div>
                   <p className={styles.cardDescription}>
                     Ingresa un nuevo expediente completo para participar en el proceso de evaluación de la convocatoria vigente.
@@ -119,7 +119,7 @@ export const RatificacionModal = ({
                   </div>
 
                   <button type="button" className={styles.cardSelectBtn}>
-                    Participar en convocatoria
+                    Ser evaluado en la convocatoria actual
                   </button>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export const RatificacionModal = ({
               <div className={styles.infoNote}>
                 <FontAwesomeIcon icon={faInfoCircle} className={styles.infoNoteIcon} />
                 <span>
-                  Al registrar tu ratificación, tu solicitud pasará al estado de <strong>"En evaluación"</strong>.
+                  Al registrar tu ratificación, tu solicitud pasará a espera para ser evaluada por la Comisión Dictaminadora.
                 </span>
               </div>
 
@@ -178,7 +178,7 @@ export const RatificacionModal = ({
               <div className={styles.badgeContainer}>
                 <FontAwesomeIcon icon={faAward} className={styles.badgeIcon} />
                 <div className={styles.badgeText}>
-                  <span className={styles.badgeLabel}>NIVEL RATIFICADO</span>
+                  <span className={styles.badgeLabel}>NIVEL A RATIFICAR</span>
                   <span className={styles.badgeValue}>{nivelActual}</span>
                 </div>
               </div>
