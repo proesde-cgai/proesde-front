@@ -17,6 +17,9 @@ import EnviarSolicitud from "../../enviarSolicitud/pages/EnviarSolicitud";
 import useStatusStore from "../../../../store/useStatusStore";
 import { CambioParticipacion } from "../../../hackAcademico/components/CambioParticipacion";
 import { DescargaDocumentos } from "../../descargaDocumentos/components/DescargaDocumentos";
+import { RatificacionModal } from "../../components/RatificacionModal/RatificacionModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock, faRotate, faAward, faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
 // Obtener la URL base desde las variables de entorno
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
@@ -29,6 +32,11 @@ export const LlenarSolicitudPage = () => {
   const [status, setStatus] = useState(null);
   const [canShowDescargaDocumentos, setCanShowDescargaDocumentos] = useState(false);
   const { setRequestStatus } = useStatusStore();
+
+  // Estados para la ventana de Ratificación de Nivel (Docente)
+  const [isRatificacionModalOpen, setIsRatificacionModalOpen] = useState(true);
+  const [isRatifiedInEvaluation, setIsRatifiedInEvaluation] = useState(false);
+  const [ratifiedLevel, setRatifiedLevel] = useState("Nivel VII");
 
   const componentMap = {
     Crear: <Solicitud />,
@@ -89,7 +97,6 @@ export const LlenarSolicitudPage = () => {
   }, []);
 
   console.log("Current status: ", status)
-
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -177,14 +184,84 @@ export const LlenarSolicitudPage = () => {
     { selectedValue: "Instrucciones", isVertical: false }
   );
 
+  const handleRatifyConfirm = (level) => {
+    setIsRatifiedInEvaluation(true);
+    setRatifiedLevel(level || "Nivel VII");
+  };
+
+  const handleParticipateConfirm = () => {
+    setIsRatifiedInEvaluation(false);
+  };
+
   return (
     <>
       <div>
         <Header />
+
+        {/* Barra de estado de Ratificación (solo visible si está En Evaluación) o botón de acceso */}
+        {isRatifiedInEvaluation && (
+          <div style={{
+            background: "#fffbebf7",
+            borderBottom: "1px solid #fde68a",
+            padding: "0.5rem 1.5rem",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "0.5rem"
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.875rem", color: "#92400e" }}>
+              <FontAwesomeIcon icon={faClock} style={{ color: "#b45309" }} />
+              <span>
+                <strong>Solicitud de Ratificación ({ratifiedLevel}):</strong> Estatus actual:{" "}
+                <span style={{
+                  background: "#b45309",
+                  color: "#ffffff",
+                  padding: "0.15rem 0.5rem",
+                  borderRadius: "10px",
+                  fontWeight: "bold",
+                  fontSize: "0.775rem"
+                }}>
+                  EN EVALUACIÓN
+                </span>
+              </span>
+            </div>
+
+            <button
+              onClick={() => setIsRatificacionModalOpen(true)}
+              style={{
+                background: "#1b396a",
+                color: "#ffffff",
+                border: "none",
+                padding: "0.35rem 0.75rem",
+                borderRadius: "4px",
+                fontSize: "0.8rem",
+                fontWeight: "600",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.4rem"
+              }}
+            >
+              <FontAwesomeIcon icon={faRotate} /> Ratificación / Convocatoria
+            </button>
+          </div>
+        )}
+
         <Menu menu={menu} />
         {menu?.element}
         <Footer />
       </div>
+
+      {/* Modal de Ratificación de Nivel para el Docente */}
+      <RatificacionModal
+        isOpen={isRatificacionModalOpen}
+        onClose={() => setIsRatificacionModalOpen(false)}
+        onRatifyConfirm={handleRatifyConfirm}
+        onParticipateConfirm={handleParticipateConfirm}
+        nivelActual={ratifiedLevel}
+      />
     </>
   );
 };
+
