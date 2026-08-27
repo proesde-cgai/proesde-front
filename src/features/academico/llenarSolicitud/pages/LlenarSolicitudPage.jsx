@@ -48,7 +48,7 @@ export const LlenarSolicitudPage = () => {
     "Rubros de evaluación": <ExpedienteCriteriosPage />,
     "Plan de trabajo": <PlanTrabajoPage />,
     "Generar Inconformidad": <GenerarInconformidad />,
-    "Enviar Solicitud" : <EnviarSolicitud />,
+    "Enviar Solicitud": <EnviarSolicitud />,
     "Cambio de Participación": <CambioParticipacion />,
     "Descarga de Documentos": <DescargaDocumentos />,
   };
@@ -152,21 +152,21 @@ export const LlenarSolicitudPage = () => {
         menu.nombreCorto !== "Enviar Solicitud"
     )
     .filter((menu) => canShowDescargaDocumentos || menu.nombreCorto !== "Descarga de Documentos");
-  
+
   // Permite mostrar "Enviar Solicitud" si status === 2 o status === 7
   const puedeEnviarSolicitud = status === 2 || status === 7;
-  
+
   let filteredMenu = []
-  if(!puedeEnviarSolicitud){
+  if (!puedeEnviarSolicitud) {
     console.log("filteredMenuResponse", filteredMenuResponse);
     filteredMenu = filteredMenuResponse.filter((menu) => {
-      return  menu.nombreCorto !== "Enviar Solicitud";
+      return menu.nombreCorto !== "Enviar Solicitud";
     });
 
-  }else{
+  } else {
     filteredMenu = filteredMenuResponse
   }
-  
+
   const menu = useMenu(
     filteredMenu.map((menu) => ({
       label: menu.nombreCorto,
@@ -198,55 +198,105 @@ export const LlenarSolicitudPage = () => {
       <div>
         <Header />
 
-        {/* Barra de estado de Ratificación (solo visible si está En Evaluación) o botón de acceso */}
-        {isRatifiedInEvaluation && (
-          <div style={{
-            background: "#fffbebf7",
-            borderBottom: "1px solid #fde68a",
-            padding: "0.5rem 1.5rem",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: "0.5rem"
-          }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.875rem", color: "#92400e" }}>
-              <FontAwesomeIcon icon={faClock} style={{ color: "#b45309" }} />
-              <span>
-                <strong>Solicitud de Ratificación ({ratifiedLevel}):</strong> Estatus actual:{" "}
-                <span style={{
-                  background: "#b45309",
-                  color: "#ffffff",
-                  padding: "0.15rem 0.5rem",
-                  borderRadius: "10px",
-                  fontWeight: "bold",
-                  fontSize: "0.775rem"
-                }}>
-                  EN EVALUACIÓN
-                </span>
-              </span>
+        {/* Tarjeta / Banner superior de Modalidad y Estatus */}
+        <div style={{
+          background: "#ffffff",
+          borderBottom: "1px solid #e2e8f0",
+          padding: "0.85rem 1.75rem",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "1rem",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.03)"
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <div style={{
+              width: "44px",
+              height: "44px",
+              borderRadius: "8px",
+              background: isRatifiedInEvaluation ? "#fefce8" : "#eff6ff",
+              border: isRatifiedInEvaluation ? "1px solid #fde047" : "1px solid #dbeafe",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "1.3rem",
+              color: isRatifiedInEvaluation ? "#ca8a04" : "#1b396a",
+              flexShrink: 0
+            }}>
+              <FontAwesomeIcon icon={isRatifiedInEvaluation ? faAward : faLayerGroup} />
             </div>
 
-            <button
-              onClick={() => setIsRatificacionModalOpen(true)}
-              style={{
-                background: "#1b396a",
-                color: "#ffffff",
-                border: "none",
-                padding: "0.35rem 0.75rem",
-                borderRadius: "4px",
-                fontSize: "0.8rem",
-                fontWeight: "600",
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: "0.4rem"
-              }}
-            >
-              <FontAwesomeIcon icon={faRotate} /> Ratificación / Convocatoria
-            </button>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", flexWrap: "wrap" }}>
+                <span style={{ fontSize: "1rem", fontWeight: "700", color: "#0f172a" }}>
+                  {isRatifiedInEvaluation ? "Modalidad: Ratificación de Nivel" : "Modalidad: Convocatoria Vigente"}
+                </span>
+                {isRatifiedInEvaluation ? (
+                  <span style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.35rem",
+                    background: "#fef9c3",
+                    color: "#854d0e",
+                    border: "1px solid #fde047",
+                    padding: "0.2rem 0.65rem",
+                    borderRadius: "20px",
+                    fontWeight: "800",
+                    fontSize: "0.75rem",
+                    letterSpacing: "0.03em"
+                  }}>
+                    <FontAwesomeIcon icon={faClock} style={{ fontSize: "0.75rem" }} /> EN EVALUACIÓN
+                  </span>
+                ) : (
+                  <span style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.35rem",
+                    background: "#f1f5f9",
+                    color: "#334155",
+                    border: "1px solid #cbd5e1",
+                    padding: "0.2rem 0.65rem",
+                    borderRadius: "20px",
+                    fontWeight: "700",
+                    fontSize: "0.75rem",
+                    letterSpacing: "0.02em"
+                  }}>
+                    PROCESO ACTIVO
+                  </span>
+                )}
+              </div>
+
+              <div style={{ fontSize: "0.825rem", color: "#64748b", marginTop: "2px" }}>
+                {isRatifiedInEvaluation
+                  ? `Solicitud registrada para conservar ${ratifiedLevel} • En espera para la revisión por la Comisión Dictaminadora`
+                  : "Participación con evaluación de expediente • Puedes cambiar a ratificar tu nivel actual"}
+              </div>
+            </div>
           </div>
-        )}
+
+          <button
+            onClick={() => setIsRatificacionModalOpen(true)}
+            style={{
+              background: isRatifiedInEvaluation ? "#ffffff" : "#1b396a",
+              color: isRatifiedInEvaluation ? "#1b396a" : "#ffffff",
+              border: isRatifiedInEvaluation ? "1.5px solid #1b396a" : "none",
+              padding: "0.5rem 1.1rem",
+              borderRadius: "6px",
+              fontSize: "0.85rem",
+              fontWeight: "700",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.06)",
+              transition: "all 0.2s ease"
+            }}
+          >
+            <FontAwesomeIcon icon={faRotate} />
+            {isRatifiedInEvaluation ? "Cambiar a Convocatoria" : "Cambiar a Ratificación"}
+          </button>
+        </div>
 
         <Menu menu={menu} />
         {menu?.element}

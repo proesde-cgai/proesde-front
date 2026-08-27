@@ -109,7 +109,7 @@ export const RatificacionModal = ({
                   <p className={styles.cardDescription}>
                     Ingresa un nuevo expediente completo para participar en el proceso de evaluación de la convocatoria vigente.
                   </p>
-                  
+
                   <div className={styles.badgeContainer}>
                     <FontAwesomeIcon icon={faFileLines} className={styles.badgeIcon} />
                     <div className={styles.badgeText}>
@@ -130,7 +130,7 @@ export const RatificacionModal = ({
           {step === 2 && (
             <div className={styles.stepContent}>
               <h4 className={styles.sectionTitle}>Confirmación de Ratificación</h4>
-              
+
               <div className={styles.summaryTable}>
                 <div className={styles.summaryRow}>
                   <span className={styles.summaryLabel}>Nivel a ratificar:</span>
