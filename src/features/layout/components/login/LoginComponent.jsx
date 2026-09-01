@@ -257,11 +257,15 @@ export const LoginComponent = () => {
               <div className={styles.cardDivider}></div>
               <div className={styles.cardContactBox}>
                 <p className={styles.cardContactText}>
-                  Cualquier duda o inquietud referente al sistema o a la convocatoria PROESDE,
-                  favor de comunicarse vía correo electrónico a:{" "}
-                  <a href="mailto:proesde@udg.mx" className={styles.cardEmailLink}>
-                    proesde@udg.mx
-                  </a>.
+                  ¿Tienes algún problema con el sistema?{" "}
+                  <a
+                    href="https://script.google.com/macros/s/AKfycby-fPIycs9-u0DEA0eShKeyweSHQhJ6O3I-xngFayUG0_PFJE7Sqkn8_17l-ZU-CvUO2w/exec"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.cardEmailLink}
+                  >
+                    Solicita ayuda aquí.
+                  </a>
                 </p>
               </div>
             </form>

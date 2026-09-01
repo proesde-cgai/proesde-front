@@ -10,22 +10,30 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Deploy Frontend
+      - name: Ejecutar Pruebas Automatizadas
         run: |
           set -e
 
           FRONTEND_DIR="/var/www/proesde/proesde-front"
 
-          echo "=== Desplegando Frontend en $FRONTEND_DIR ==="
-
+          echo "=== Actualizando código en $FRONTEND_DIR ==="
           cd "$FRONTEND_DIR"
 
-          echo "=== Actualizando código ==="
           git fetch origin develop
           git reset --hard origin/develop
 
           echo "=== Instalando dependencias ==="
           npm install --no-audit --no-fund
+
+          echo "=== Ejecutando pruebas automatizadas del Frontend ==="
+          CI=true npm test -- --watchAll=false
+
+      - name: Compilar y Desplegar Frontend
+        run: |
+          set -e
+
+          FRONTEND_DIR="/var/www/proesde/proesde-front"
+          cd "$FRONTEND_DIR"
 
           echo "=== Compilando Frontend ==="
           CI=false npm run build

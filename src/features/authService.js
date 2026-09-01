@@ -72,7 +72,7 @@ export const login = async (username, password) => {
           `
           );
       } else if (error.response.status === 403){
-        throw new Error("Comuníquese a la CGAI al correo electrónico proesde@udg.mx, proporcionando su código y su nombre completo para revisión del caso");
+        throw new Error("¿Tienes algún problema con el acceso? <a href='https://script.google.com/macros/s/AKfycby-fPIycs9-u0DEA0eShKeyweSHQhJ6O3I-xngFayUG0_PFJE7Sqkn8_17l-ZU-CvUO2w/exec' target='_blank' rel='noopener noreferrer' style='color:#1e293b; font-weight:800; text-decoration:underline;'>Solicita ayuda aquí.</a>");
       }
             
       else {
