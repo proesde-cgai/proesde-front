@@ -23,7 +23,7 @@ export const LoginComponent = () => {
   const [error, setError] = useState("");
   const [showRoleModal, setShowRoleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const [roles, setRoles] = useState([]);
   const navigate = useNavigate();
 
@@ -65,14 +65,14 @@ export const LoginComponent = () => {
 
     const currentRole = localStorage.getItem("rol");
     const newRole = selectedRole.toLowerCase();
-    
+
     console.log("rol ", newRole);
-    
+
     // Si el rol ha cambiado, resetear el formulario de búsqueda
     if (currentRole && currentRole !== newRole) {
       useSearchStore.getState().clearFormData();
     }
-    
+
     localStorage.setItem("rol", newRole);
 
     try {
@@ -244,8 +244,8 @@ export const LoginComponent = () => {
               )}
 
               <div className={styles.buttonRow}>
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className={styles.submitBtn}
                   disabled={isSubmitting}
                 >
@@ -259,7 +259,7 @@ export const LoginComponent = () => {
                 <p className={styles.cardContactText}>
                   ¿Tienes algún problema con el sistema?{" "}
                   <a
-                    href="https://script.google.com/macros/s/AKfycby-fPIycs9-u0DEA0eShKeyweSHQhJ6O3I-xngFayUG0_PFJE7Sqkn8_17l-ZU-CvUO2w/exec"
+                    href="https://script.google.com/macros/s/AKfycbwWkvUk4fS3ez_1leZiZMPvJLc-9L-0C4UlXzvvGbXvTBt_xlSzS1RbmkQzsj3BKiEEzA/exec"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.cardEmailLink}
